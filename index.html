@@ -67,10 +67,11 @@
                     <h2>Get in Touch</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim voluptatum, iste repudiandae quod vero molestiae dolorem corporis minus ullam exercitationem pariatur accusamus dicta ad voluptates modi cum quaerat nihil tempora?</p>
                     <div class="form-position">
-                        <form action="form.php">
-                        <input type="text" placeholder="Name">
-                        <input type="email" placeholder="Email">
-                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"
+                        <form action="mail.php" method="POST">
+                        <input type="text" placeholder="Name" name="user_name">
+                        <input type="email" placeholder="Email" name="user_email">
+                        <textarea name="message" id="message" name="user_message"
+                         cols="30" rows="10" placeholder="Message"
                         ></textarea>
                         <div class="clear"></div>
                         <button type="submit">Send Message</button>
