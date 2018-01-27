@@ -99,7 +99,10 @@ text-decoration:none;
 a:hover {
 color:#0ae6c5;
 }
-
+.example-description p a{
+    color: #4d3e3e;
+    font-weight: 600;
+}
 .greeting h2 span {
 color:#fff;
 }
