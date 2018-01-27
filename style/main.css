@@ -77,8 +77,8 @@ ul{
 
 .social-footer {
     position: absolute;
-    bottom: 100px;
-    right: 50px;
+    bottom: 15%;
+    right: 10%;
 }
 
 .fa{
@@ -149,20 +149,21 @@ a:hover{
 
 
 input {
-    width: 210px;
+    width: 49%;
     font-size: 25px;
     padding: 5px;
-    margin: 20px;
+    margin-right: 5px;
     margin-bottom: 0;
-    margin-right: 0;
+    
     color: inherit;
     float: left;
 }
 
 textarea{   
-    width: 460px;
+    width:100%;
     margin: 20px;
     margin-right: 0;
+    margin: 20px auto;
     float: left;
 }
 input:first-of-type,
@@ -197,15 +198,17 @@ button:active{
 
 
 .form-position {
-    margin-left: 140px;
+    margin: 0 auto;
+    max-width: 500px;
 }
 
 button {
-    width: 210px;
+    width: 49%;
     font-size: 25px;
     padding: 5px;
-    margin: 0 10px;
+    margin-right: 5px;
     color: inherit;
+    float: left;
 }
 
 .text-container h2 {
