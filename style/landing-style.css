@@ -404,12 +404,12 @@ p{
     font-size: 2em;
 }
 /*---------*/
-.left-container{
+.left-testim-container{
     float: left;
     width: 49%;
     margin-right: 2%;
 }
-.left-container>span{
+.left-testim-container>span{
     display: block;
     width: 60px;
     height: 60px;    
@@ -424,11 +424,11 @@ p{
     float: left;    
 }
 /*----------*/
-.right-container{
+.right-testim-container{
     float: right;
     width: 49%;   
 }
-.right-container>span{
+.right-testim-container>span{
     display: block;
     width: 60px;
     height: 60px;    
@@ -574,21 +574,24 @@ p{
 }
 
 /*-------*/
-.left-container input::-webkit-input-placeholder,
-.left-container textarea::-webkit-input-placeholder{ color: #555555; }
+.left-form-container input::-webkit-input-placeholder,
+.left-form-container textarea::-webkit-input-placeholder{ color: #555555; }
 
-.left-container input::-moz-placeholder,
-.left-container textarea::-moz-placeholder{ color: #555555; } /* Firefox 19+ */
-.left-container input:-moz-placeholder,
-.left-container textarea:-moz-placeholder { color: #555555; } /* Firefox 18- */
-.left-container input:-ms-input-placeholder,
-.left-container textarea:-ms-input-placeholder { color: #555555; }
+.left-form-container input::-moz-placeholder,
+.left-form-container textarea::-moz-placeholder{ color: #555555; } /* Firefox 19+ */
+.left-form-container input:-moz-placeholder,
+.left-form-container textarea:-moz-placeholder { color: #555555; } /* Firefox 18- */
+.left-form-container input:-ms-input-placeholder,
+.left-form-container textarea:-ms-input-placeholder { color: #555555; }
 /*--------*/
 
-.feedback-container .left-container,
-.feedback-container .right-container{
+.feedback-container .left-form-container,
+.feedback-container .right-form-container{
     float: left;
     width: 49%;
+}
+.feedback-container .left-form-container{
+    margin-right: 2%;
 }
 .input-f-container{
     float: left;
@@ -629,14 +632,14 @@ p{
     transition-duration: 1;
 }
 
-.right-container{
+.right-form-container{
     width: 80%;
 }
-.right-container h3{
+.right-form-container h3{
     color: #555;
     font-weight: 500;
 }
-.right-container h3 i{
+.right-form-container h3 i{
     color: #f17398;
     margin-right: 5px;
     font-size: 1.5em;

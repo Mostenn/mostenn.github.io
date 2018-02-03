@@ -151,9 +151,11 @@ transition: .98s;
 .example-i {
 display:block;
 width:290px;
+    height: 200px;
 border-bottom:1.2px solid #aaa;
 box-shadow:1px 1px 10px #aaa;
 margin:0 auto 50px;
+    overflow: hidden;
 }
 
 input {
