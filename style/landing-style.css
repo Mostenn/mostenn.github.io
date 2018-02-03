@@ -246,6 +246,7 @@ p{
     font-size: 12px;
 }
 /*--------------------------Search section end*/
+
 /*--------------------------Recently section starts*/
 .recently {
     width: 1000px;
@@ -268,6 +269,14 @@ p{
 }
 .img-container img{
     margin: 0;
+    border: 1px solid transparent;
+}
+.img-container img:hover{
+    -webkit-box-shadow: 1px 2px 15px #555, -1px 2px 15px #fff, 1px -2px 15px #555, -1px 2px 15px #555;
+    -moz-box-shadow: 1px 2px 15px #555, -1px 2px 15px #fff, 1px -2px 15px #555, -1px 2px 15px #555;
+    -o-box-shadow: 1px 2px 15px #555, -1px 2px 15px #fff, 1px -2px 15px #555, -1px 2px 15px #555;
+    box-shadow: 1px 2px 15px #555, -1px 2px 15px #fff, 1px -2px 15px #555, -1px 2px 15px #555;
+    border: 1px solid #fff;
 }
 .img-container:nth-of-type(1),
 .img-container:nth-of-type(2),
@@ -275,7 +284,7 @@ p{
 .img-container:nth-of-type(4),
 .img-container:nth-of-type(5),
 .img-container:nth-of-type(6){
-    position: absolute;  
+    position: absolute;    
 }
 .img-container:nth-of-type(1){
     top: 0;
@@ -521,12 +530,21 @@ p{
     margin: 0 auto;
     margin-bottom: 50px;
 }
-
+.t-1-container{margin-left: 2.5%;}
 .t-1-container,
 .t-2-container,
 .t-3-container{
-    width: 33.33%;
+    width: 30%;
     float: left;
+    margin-right:2.5%;    
+}
+.t-1-container>div:first-of-type,
+.t-2-container>div:first-of-type,
+.t-3-container>div:first-of-type{
+    height: 195px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    border-bottom: none;
 }
 .t-span-container span:first-of-type{
     font-size: 1.3em;
