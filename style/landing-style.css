@@ -235,15 +235,40 @@ p{
     background-color: skyblue;
     padding-left: 10px;
 }
-
-
-.start{
+.yes-no-container input[type="radio"]{
+    display: none;
+}
+.yes-no-container input[type="radio"]:checked + label{
+    color: #fff;
+    background-color: #555555;
+}
+.yes-no-container{
+    font-size: 0;
     float: left;
 }
-.start .button{
-    width: 220px;
+.yes-no-container label{
+    display: inline-block;
+    width: 85px;
+    height: 28px;
+    line-height: 25px;
+    text-align: center;
+    font-size: 14px;
+    color: #555555;
+    border: 1px solid #6c6c6c;
+    background-color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.btn-search{
+    float: left;
+}
+.btn-search .button{
+    width: 242px;
     height: 30px;
     font-size: 12px;
+    margin-top: 25px;
+    margin-left: -15px;
 }
 /*--------------------------Search section end*/
 

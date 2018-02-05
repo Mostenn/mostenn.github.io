@@ -9,7 +9,7 @@
 <body>
     <div class="all-content">
        
-        <div class="header">
+        <div class="header" id="homepage">
            
             <div class="navigation">              
                <div class="container">                  
@@ -27,19 +27,19 @@ Ask us questions <br></li>
                 </div>
                 
                 
-                <div class="main-menu">
+                <div class="main-menu" >
                     <ul>
-                        <li><a href="" class="menu-links links">Homepage</a></li>
-                        <li><a href="" class="menu-links links">Search</a></li>
-                        <li><a href="" class="menu-links links">Recent Images</a></li>
-                        <li><a href="" class="menu-links links">About</a></li>
-                        <li><a href="" class="menu-links links">Testimonials</a></li>
-                        <li><a href="" class="menu-links links">Sponsors</a></li>
-                        <li><a href="" class="menu-links links">Team</a></li>
-                        <li><a href="" class="menu-links links">Contact</a></li>
-                        <li><a href="" class="menu-links links"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                        <li><a href="" class="menu-links links"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                        <li><a href="" class="menu-links links"><i class="fa fa-behance" aria-hidden="true"></i></a></li>
+                        <li><a href="#homepage" class="menu-links links">Homepage</a></li>
+                        <li><a href="#search" class="menu-links links">Search</a></li>
+                        <li><a href="#recently" class="menu-links links">Recent Images</a></li>
+                        <li><a href="#about" class="menu-links links">About</a></li>
+                        <li><a href="#testimonials" class="menu-links links">Testimonials</a></li>
+                        <li><a href="#sponsors" class="menu-links links">Sponsors</a></li>
+                        <li><a href="#team" class="menu-links links">Team</a></li>
+                        <li><a href="#contact" class="menu-links links">Contact</a></li>
+                        <li><a href="https://facebook.com" class="menu-links links"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.linkedin.com/" class="menu-links links"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.behance.net/" class="menu-links links"><i class="fa fa-behance" aria-hidden="true"></i></a></li>
                     </ul>                    
                 </div>
                </div>
@@ -59,7 +59,8 @@ Ask us questions <br></li>
         
         
         
-        <div class="search">
+        <div class="search" id="search">
+          <form>
            <div class="search-all"><i class="fa fa-search" aria-hidden="true"></i>
 <input class="search-input" type="text" placeholder="Search all galleries"></div>
            
@@ -100,17 +101,24 @@ Ask us questions <br></li>
                     <option value="">111</option>
                     <option value="">111</option>
                 </select></div>
+                
                 <div class="yes-no-container">Adult Content<br>
-                </div>                
-                <div class="start">
+                <input type="radio" name="switcher" id="yes" checked="">
+                <label for="yes">Yes</label>
+                <input type="radio" name="switcher" id="no">                
+                <label for="no">No</label>
+                </div>    
+                            
+                <div class="btn-search">
                     <button class="button">
                         Start your search
                     </button>
                 </div>
                 <div class="clear"></div>
             </div>
+            </form>
         </div>
-        <div class="recently">
+        <div class="recently" id="recently">
             <div class="recently-text">
                 <h2>Over 40 Million Stock Photos, Vectors, Videos, and Music Tracks</h2>
             <p>Search for images anywhere using our award-winning iPad®, iPhone®, and Android® apps. Functional enough to use alone, beautiful enough to show off to clients.</p>
@@ -118,7 +126,7 @@ Ask us questions <br></li>
                
                 <h2>Recently uploaded</h2>
                 
-            <div class="recently-uploaded">               
+            <div class="recently-uploaded" >               
                 <div class="img-container"><img src="/img/recently-img_1.png" alt="" class="recently-img"></div>
                 <div class="img-container"><img src="/img/recently-img_2.png" alt="" class="recently-img"> <span>Old man from india<br></span></div>
                 <div class="img-container"><img src="/img/recently-img_3.png" alt="" class="recently-img"></div>
@@ -129,7 +137,7 @@ Ask us questions <br></li>
             </div>
         </div>
         
-        <div class="about">
+        <div class="about" id="about">
            <h2>About Stock photography</h2>
            
             <div class="about-container"><div class="opacity"></div>                     
@@ -140,7 +148,7 @@ Ask us questions <br></li>
             </div>
             </div>
         </div>
-        <div class="testimonials">
+        <div class="testimonials" id="testimonials">
             <div class="testimonials-container">
                 <h2>Hear what our customers are saying</h2>
                 <div class="left-testim-container">
@@ -160,13 +168,13 @@ Ask us questions <br></li>
                 <div class="clear"></div>    
             </div>
         </div>
-        <div class="sponsors">
+        <div class="sponsors" id="sponsors">
             <h2>Our sponsors</h2>
             <div class="s-img-container">
                 <img src="/img/sponsors.png" alt="">
             </div>                       
         </div>
-        <div class="team">
+        <div class="team" id="team">
             <h2>Meet our team</h2>
             <div class="t-container">
                 <div class="t-1-container">
@@ -221,7 +229,7 @@ Ask us questions <br></li>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12758.30587725181!2d27.90522190902695!3d47.76004833550009!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40cb673a731f2613%3A0x75ffb7a54ede02d9!2z0JHQtdC70YzRhtGLLCDQnNC-0LvQtNC-0LLQsA!5e0!3m2!1sru!2s!4v1517613107800" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
         <div class="clear"></div>
-        <div class="feedback">
+        <div class="feedback" id="contact">
             <h2>Get in tohuch with us</h2>
             <div class="feedback-container">
                 <div class="left-form-container">
