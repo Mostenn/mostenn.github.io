@@ -32,16 +32,28 @@ left:0;
 top:0;
 bottom:0;
 text-align:right;
-color:gray;
+color:#898989;
+    text-shadow: 2px -1px .5px #5a5a5a;
 overflow:hidden;
+/*
 background-image:url(../img/bg.jpg);
 background-attachment:local;
+*/
+background: #134E5E;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #71B280, #134E5E);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #71B280, #134E5E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.greeting h2 span {
+color:#fff;
+    text-shadow: none;
 }
 
 .social-icons {
 padding-left:0;
 list-style:none;
 margin:0;
+/*    text-shadow: none;*/
 }
 
 .social-icons li {
@@ -93,20 +105,20 @@ font-size:30px;
 margin-right:15px;
     border-bottom: 1px solid transparent;
 }
-a {
+.left-container a {
 color:gray;
+    text-shadow: 2px -1px 1px #483232;
 text-decoration:none;
 }
-a:hover {
-color:#7cf2aa;
+.left-container a:hover {
+color:#68ffa3;
+    text-shadow: 2px 1px 5px #033901;
 }
 .example-description p a{
     color: #4d3e3e;
     font-weight: 600;
 }
-.greeting h2 span {
-color:#fff;
-}
+
 
 .right-content .container {
 padding:40px;
