@@ -18,6 +18,7 @@ ul{
     padding: 0;
 }
 .button{
+    margin: 0;
     padding: 5px 15px;
     font-size: 14px;
     font-weight: 550;
@@ -140,11 +141,14 @@ p{
 .know-more-container{
     width: 1000px;
     margin: 0 auto;
+    position: absolute;
+    top: 55%;
 }
 
 .know-more{
-    position: absolute;
-    top: 55%;
+    position: relative;
+    top: -50px;
+    left: 150px;
     height: 170px;
     width: 460px;
     background-color: rgba(255, 255, 255, 0.76);
@@ -153,6 +157,7 @@ p{
 .know-more a{
     width: 120px;
     position: absolute;
+    bottom: -34px;
     padding: 5px;
     font-size: 14px;
     font-weight: 550;
