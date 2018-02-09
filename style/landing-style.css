@@ -45,6 +45,9 @@ p{
 .clear{
     clear: both;
 }
+.all-content{
+    min-width: 1100px;
+}
 /*----------------------Header section*/
 .header{
     position: relative;
