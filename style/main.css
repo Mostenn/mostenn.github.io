@@ -39,10 +39,12 @@ body {
 
 body {
     font-family: 'Ubuntu', Arial, sans-serif;
+    font-size: 15px;
 }
 
 ul {
     list-style: none;
+    margin: 0;
     padding: 0;
 }
 
@@ -51,7 +53,8 @@ a {
     color: inherit;
     cursor: pointer;
 }
-a:hover{
+
+a:hover {
     color: #4d3e3e;
 }
 
@@ -95,16 +98,6 @@ a:hover{
 
 /*---------------------------Preloader end*/
 
-/*-----------------------SVG Icons start*/
-
-.svg-icons {
-    display: block;
-    width: 50px;
-    height: 50px;
-}
-
-/*------------------------SVG Icons end*/
-
 /*------------------------- Left container*/
 
 .left-container {
@@ -112,13 +105,13 @@ a:hover{
     min-width: 20%;
     height: 100%;
     position: fixed;
-    left: -400px;
+    left: -390px;
     top: 0;
     bottom: 0;
     padding: 15px 20px;
-    -webkit-transition: left 0.3s;
-    -moz-transition: left 0.3s;
-    transition: left 0.3s;
+    -webkit-transition: left 0.45s;
+    -moz-transition: left 0.45s;
+    transition: left 0.45s;
     text-align: right;
     color: #222121;
     text-shadow: 2px -1px .5px #5a5a5a;
@@ -129,20 +122,17 @@ a:hover{
 
 .nav-toggle {
     position: absolute;
-    left: 400px;
-    top: 1em;
-    padding: 0.5em;
+    left: 390px;
+    top: 1rem;
+    padding: 10px;
     background: inherit;
     color: #dadada;
     cursor: pointer;
-    font-size: 1.2em;
-    line-height: 1;
+    font-size: 2em;
+    line-height: 2em;
     /* всегда поверх других элементов страницы */
     z-index: 2001;
-    /* анимируем цвет текста при наведении */
-    -webkit-transition: color .25s ease-in-out;
-    -moz-transition: color .25s ease-in-out;
-    transition: color .25s ease-in-out;
+
 }
 
 .nav-toggle:after {
@@ -174,11 +164,14 @@ a:hover{
     -webkit-transform: translateX(400px);
     -moz-transform: translateX(400px%);
     transform: translateX(400px);
+    -webkit-transition: left 0.4s;
+    -moz-transition: left 0.4s;
+    transition: left 0.3s;
 }
 
 .photo {
     position: absolute;
-    right: 11%;
+    right: 12%;
     top: 10%;
     width: 150px;
     height: 150px;
@@ -194,7 +187,7 @@ a:hover{
 
 .greeting {
     position: absolute;
-    right: 11%;
+    right: 12%;
     top: 33%;
 }
 
@@ -206,7 +199,7 @@ a:hover{
 .social-footer {
     position: absolute;
     bottom: 10%;
-    right: 11%;
+    right: 12%;
 }
 
 .social-icons li {
@@ -227,14 +220,13 @@ a:hover{
 }
 
 .left-container a {
-    color: #2c2b2b;
-    text-shadow: 1px -2px 2px #818181, 2px 2px 2px #818181, -1px 2px #818181;
+    color: #a2a2a2;
     text-decoration: none;
 }
 
 .left-container a:hover {
-    color: #fff;
-    text-shadow: 2px 1px 5px #033901;
+    color: #525252;
+    text-shadow: 2px 1px 5px #000, 2px -1px 5px #000, -2px 1px 5px #000;
 }
 
 /*------------------------- Left container end*/
@@ -253,12 +245,14 @@ a:hover{
     margin: 0 auto;
 }
 
+.right-content h2 {
+    text-align: center;
+}
+
 /*---------------------------------------------*/
 
 .text-container {
     width: 100%;
-    font-size: 1.2em;
-    line-height: 1.5em;
     border-bottom: 1.2px solid #aaa;
     box-shadow: 1px 1px 10px #aaa;
     margin: 0 auto;
@@ -266,8 +260,16 @@ a:hover{
     padding: 10px;
 }
 
+.text-container ul {
+    margin-left: 10px;
+}
+
+.text-container h3 span {
+    margin-left: 1em;
+}
+
 .right-content h3 {
-    text-align: center;
+    /*    text-align: center;*/
 }
 
 .services-container {
@@ -281,6 +283,11 @@ a:hover{
 .form-container {
     margin-bottom: 50px;
     padding: 1%;
+}
+
+.example-container {
+    max-width: 1100px;
+    margin: auto;
 }
 
 .example-block {
@@ -323,7 +330,7 @@ a:hover{
 .form-container {
     color: #a2a2a2;
     box-shadow: 1px 1px 10px #aaa;
-    /*    padding: 10px;*/
+    font-size: 1em;
 }
 
 .form-position {
