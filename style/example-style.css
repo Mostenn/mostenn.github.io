@@ -6,7 +6,7 @@
 @font-face {
     font-family: Ubuntu;
     src: url(/fonts/Ubuntu-Medium.ttf);
-    font-weight: medium;
+    font-weight: 500;
 }
 
 @font-face {
