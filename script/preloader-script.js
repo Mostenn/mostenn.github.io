@@ -1,10 +1,10 @@
 $(document).ready(function () {
     $(".progress-bar").circularProgress({
-        color: "#1F1C2C",
-        line_width: 10,
+        color: "#01151e",
+        line_width: 17,
         height: "350px",
         width: "350px",
-        percent: 0,
+        percent: 20,
         counter_clockwise: false,
         starting_position: 25
     }).circularProgress('animate', 100, 2300);

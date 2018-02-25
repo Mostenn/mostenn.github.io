@@ -77,10 +77,10 @@ h1, h2, h3 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 40px;
-    font-family: 'Ubuntu', sans-serif;
+    font-size: 45px;
+    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
-    color: #1F1C2C;
+    color: #01151e;
 }
 
 #preloader {
@@ -89,7 +89,7 @@ h1, h2, h3 {
     bottom: 0;
     right: 0;
     left: 0;
-    background: rgb(219, 219, 219);
+    background: #f7f7f7;
     z-index: 9100;
 }
 
@@ -109,7 +109,7 @@ h1, h2, h3 {
 }
 
 .main-menu .wrapper ul {
-    font-size: 0px;
+    font-size: 0;
 }
 
 .main-menu .wrapper ul li {
@@ -440,7 +440,7 @@ h1, h2, h3 {
     background-size: cover;
 }
 .example-block:nth-of-type(5) {
-    background: url("../img/brain.jpeg");
+    background: url("../img/brain.jpg");
     background-size: cover;
 }
 
