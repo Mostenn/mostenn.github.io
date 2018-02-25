@@ -420,27 +420,27 @@ h1, h2, h3 {
 }
 
 .example-block:nth-of-type(1) {
-    background-image: url("../img/github.png");
+    background: url("../img/github.png") center;
     background-size: cover;
 
 }
 
 .example-block:nth-of-type(2) {
-    background: url("../img/bg-header.png");
+    background: url("../img/bg-header.png") center;
     background-size: cover;
 }
 
 .example-block:nth-of-type(3) {
-    background: url("../img/devices.png");
+    background: url("../img/devices.png") center;
     background-size: cover;
 }
 
 .example-block:nth-of-type(4) {
-    background: url("../img/slider-image1.jpeg");
+    background: url("../img/slider-image1.jpeg") center;
     background-size: cover;
 }
 .example-block:nth-of-type(5) {
-    background: url("../img/brain.jpg");
+    background: url("../img/brain.jpg") center;
     background-size: cover;
 }
 
