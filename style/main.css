@@ -300,7 +300,7 @@ h1, h2, h3 {
 .work-container h2,
 .skills h2,
 .education h2 {
-    margin-bottom: 35px;
+    margin-bottom: 75px;
 }
 
 .work-container ul,
@@ -342,7 +342,7 @@ h1, h2, h3 {
 
 /*Education*/
 .right-section .education {
-    margin-bottom: 50px;
+    margin-bottom: 75px;
 }
 
 /*---------------------- main-content end*/
