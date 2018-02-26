@@ -135,6 +135,9 @@ h1, h2, h3 {
 
 .main-menu .wrapper ul li:hover {
     border-bottom: 2px solid #ffffff;
+    -webkit-box-shadow: 8px 0 15px #2c3f5d;
+    -o-box-shadow: 8px 0 15px #2c3f5d;
+    box-shadow: 8px 0 15px #2c3f5d;
 }
 
 /*logo*/
