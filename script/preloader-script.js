@@ -1,6 +1,6 @@
 $(document).ready(function () {
     $(".progress-bar").circularProgress({
-        color: "#01151e",
+        color: "#2c3f5d",
         line_width: 17,
         height: "350px",
         width: "350px",

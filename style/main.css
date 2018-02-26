@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700');
 /*font-family: 'Montserrat', sans-serif;*/
 
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,700');
+/*font-family: 'Ubuntu', sans-serif;*/
 /*---------------------- common styles*/
 html,
 body {
@@ -24,9 +26,9 @@ ul {
 /*---------------------- all content ----*/
 .all-content {
     min-width: 1100px;
-    font-family: 'Montserrat', sans-serif;
-    color: #01151e;
-    background: #f7f7f7;
+    font-family: 'Ubuntu', sans-serif;
+    color: #2c3f5d;
+    background: #f6f7ef;
 }
 
 .header,
@@ -47,7 +49,7 @@ ul {
 }
 
 h1, h2, h3 {
-    color: #01151e;
+    color: #2c3f5d;
     margin: 0;
 }
 
@@ -89,7 +91,7 @@ h1, h2, h3 {
     font-size: 45px;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
-    color: #01151e;
+    color: #2c3f5d;
 }
 
 #preloader {
@@ -111,7 +113,7 @@ h1, h2, h3 {
 }
 
 .main-menu {
-    background: #01151e;
+    background: #2c3f5d;
     position: fixed;
     width: 100%;
     z-index: 1000;
@@ -137,7 +139,7 @@ h1, h2, h3 {
 
 /*logo*/
 .logo {
-    background: #01151e;
+    background: #2c3f5d;
     height: 220px;
 }
 
@@ -160,6 +162,7 @@ h1, h2, h3 {
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
+    border: 5px solid #354c78;
     background: url("../img/my-photo2.jpg") no-repeat;
     background-size: auto 150px;
     background-position: 50% 50%;
@@ -171,7 +174,7 @@ h1, h2, h3 {
 
 /*greeting*/
 .greeting {
-    background: #013a52;
+    background: #354c78;
     height: 150px;
 }
 
@@ -194,12 +197,12 @@ h1, h2, h3 {
 .left-section {
     width: 30%;
     padding: 20px 0 0;
-    color: #01151e;
+    color: #2c3f5d;
     float: left;
 }
 
 .left-section h2 {
-    color: #01151e;
+    color: #2c3f5d;
     margin-bottom: 20px;
 }
 
@@ -211,7 +214,7 @@ h1, h2, h3 {
 .left-section .personal ul li span {
     display: block;
     float: left;
-    border-bottom: 1px solid #01151e;
+    border-bottom: 1px solid #2c3f5d;
     padding: 7px 0;
 }
 
@@ -246,22 +249,22 @@ h1, h2, h3 {
 .left-section .software .status .container1 {
     width: 85%;
     border-radius: 5px;
-    background: #013a52;
-    color: #013a52;
+    background: #354c78;
+    color: #354c78;
 }
 
 .left-section .software .status .container2 {
     width: 70%;
     border-radius: 5px;
-    background: #013a52;
-    color: #013a52;
+    background: #354c78;
+    color: #354c78;
 }
 
 .left-section .software .status .container3 {
     width: 50%;
     border-radius: 5px;
-    background: #013a52;
-    color: #013a52;
+    background: #354c78;
+    color: #354c78;
 }
 
 /*hobbies*/
@@ -278,7 +281,7 @@ h1, h2, h3 {
     width: 90px;
     height: 90px;
     color: #f7f7f7;
-    background: #013a52;
+    background: #354c78;
     border-radius: 50%;
     line-height: 90px;
     font-size: 40px;
@@ -290,7 +293,7 @@ h1, h2, h3 {
     width: 65%;
     float: left;
     padding: 20px 0 0 40px;
-    border-left: 3px solid #013a52;
+    border-left: 3px solid #354c78;
 }
 
 /*work-container*/
@@ -303,14 +306,14 @@ h1, h2, h3 {
 .work-container ul,
 .education ul {
     display: block;
-    border-left: 1px solid #013a52;
+    border-left: 1px solid #354c78;
     padding-left: 20px;
 }
 
 .work-container ul li,
 .education ul li {
     font-size: 15px;
-    border-bottom: 1px solid #013a52;
+    border-bottom: 1px solid #2c3f5d;
 }
 
 .work-container h3:first-of-type,
@@ -330,7 +333,7 @@ h1, h2, h3 {
     width: 110px;
     height: 110px;
     line-height: 110px;
-    border: 10px solid #013a52;
+    border: 10px solid #354c78;
     border-radius: 50%;
     border-right-color: #bbc2c8;
     text-align: center;
@@ -346,7 +349,7 @@ h1, h2, h3 {
 
 /*---------------------- footer start*/
 .footer {
-    background: #013a52;
+    background: #354c78;
     height: 200px;
 }
 
@@ -374,7 +377,7 @@ h1, h2, h3 {
     line-height: 100px;
     text-align: center;
     font-size: 40px;
-    color: #013a52;
+    color: #2c3f5d;
     margin: 0 auto;
 }
 
@@ -402,7 +405,7 @@ h1, h2, h3 {
 /*address*/
 .footer .address {
     height: 35px;
-    background: #01151e;
+    background: #2c3f5d;
     padding-top: 15px;
 }
 
@@ -464,19 +467,11 @@ h1, h2, h3 {
 }
 
 .example-block:hover {
-    color: #01151e;
-    box-shadow: 1px 2px 25px #013a52, 2px 1px 25px #013a52, 2px 2px 20px #013a52;
+    color: #2f393b;
+    box-shadow: 1px 2px 25px #354c78, 2px 1px 25px #354c78, 2px 2px 20px #354c78;
     transition: .97s;
 }
 
-/*.example-img {
-    display: block;
-    width: 500px;
-    height: 300px;
-    border-bottom: 1.2px solid #aaa;
-    box-shadow: 1px 1px 10px #aaa;
-    overflow: hidden;
-}*/
 .example-description {
     width: 502px;
     height: 90px;
@@ -513,7 +508,7 @@ h1, h2, h3 {
 
 .example-block i {
     font-size: 40px;
-    color: #01151e;
+    color: #2c3f5d;
 }
 
 .example-description p a {
