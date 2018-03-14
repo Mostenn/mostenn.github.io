@@ -202,6 +202,7 @@ h1, h2, h3 {
     padding: 20px 0 0;
     color: #2c3f5d;
     float: left;
+    border-right: 3px solid #354c78;
 }
 
 .left-section h2 {
@@ -296,7 +297,7 @@ h1, h2, h3 {
     width: 65%;
     float: left;
     padding: 20px 0 0 40px;
-    border-left: 3px solid #354c78;
+    /*border-left: 3px solid #354c78;*/
 }
 
 /*work-container*/
@@ -333,9 +334,9 @@ h1, h2, h3 {
 .right-section .skills .container {
     display: inline-block;
     margin: 0 15px 15px;
-    width: 110px;
-    height: 110px;
-    line-height: 110px;
+    width: 130px;
+    height: 130px;
+    line-height: 130px;
     border: 10px solid #354c78;
     border-radius: 50%;
     border-right-color: #bbc2c8;
