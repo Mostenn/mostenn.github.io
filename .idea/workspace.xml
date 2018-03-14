@@ -41,8 +41,8 @@
           <file leaf-file-name="download.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/download.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="446">
-                  <caret line="29" column="241" lean-forward="false" selection-start-line="29" selection-start-column="241" selection-end-line="29" selection-end-column="241" />
+                <state relative-caret-position="285">
+                  <caret line="29" column="187" lean-forward="false" selection-start-line="29" selection-start-column="187" selection-end-line="29" selection-end-column="187" />
                   <folding />
                 </state>
               </provider>
@@ -212,7 +212,7 @@
       <workItem from="1520902858457" duration="151000" />
       <workItem from="1520974071443" duration="2435000" />
       <workItem from="1520997748190" duration="1005000" />
-      <workItem from="1521032178816" duration="156000" />
+      <workItem from="1521032178816" duration="833000" />
     </task>
     <task id="LOCAL-00001" summary="8658">
       <created>1519425778160</created>
@@ -354,11 +354,18 @@
       <option name="project" value="LOCAL" />
       <updated>1521032277771</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="linked in link">
+      <created>1521032344979</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1521032344979</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37465000" />
+    <option name="totallyTimeSpent" value="38142000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -875,8 +882,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/download.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="29" column="241" lean-forward="false" selection-start-line="29" selection-start-column="241" selection-end-line="29" selection-end-column="241" />
+        <state relative-caret-position="285">
+          <caret line="29" column="187" lean-forward="false" selection-start-line="29" selection-start-column="187" selection-end-line="29" selection-end-column="187" />
           <folding />
         </state>
       </provider>
