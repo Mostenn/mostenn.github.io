@@ -198,7 +198,6 @@ li.box {
     height: 100%;
     margin-right: 50px;
 }
-
 #goal {
     overflow: hidden;
 }
@@ -290,6 +289,25 @@ li.box {
         float: right;
         color: #6f7762;
         font-size: 0.9em;
+    }
+    .hidden{
+        height: 200%;
+        position: absolute;
+    }
+    .hidden img{
+        height: auto;
+        width: 100%;
+        margin: 20px 0 0;
+    }
+    .fix {
+        position: relative;
+        display: block;
+        max-width: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        opacity: .9;
+        line-height: 1em;
     }
     #goal p {
         margin-top: 10px;
