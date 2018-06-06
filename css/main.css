@@ -1,0 +1,314 @@
+@font-face {
+    font-family: Consolas;
+    src: url("../fonts/consola.ttf");
+}
+
+/*-------------------------------*/
+
+/*---------Colors-----------*/
+
+.category {
+    color: #9c6a2f;
+}
+
+.quality {
+    color: #903547;
+}
+
+.theoretical {
+    color: #9098db;
+}
+
+.normal {
+    color: #4c6e6d;
+}
+
+.good {
+    color: #303032;
+}
+
+.excellent {
+    color: #6a212c;
+}
+
+.comment {
+    color: #6f7762;
+}
+
+/*---------Colors end---------*/
+
+/*-------Global------------*/
+
+body {
+    font: 15px/17px 'Consolas', monospace;
+    color: #2c3f5d;
+    background: #f6f7ef;
+}
+
+header {
+    border-top: 1px solid transparent;
+    padding: 5px 0;
+}
+
+h1 {
+    color: #7285b7;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ol {
+    list-style: decimal-leading-zero;
+    padding-left: 50px;
+}
+
+.lvl-1 {
+    padding: 0 0 0 30px;
+}
+
+.lvl-2 {
+    padding: 0 0 0 100px;
+}
+
+.box {
+    margin: 10px 0;
+}
+
+li.box {
+    margin: 10px 0 5px;
+}
+
+.ib {
+    display: inline-block;
+}
+
+.ibl {
+    display: inline-block;
+    float: left;
+}
+
+.ibr {
+    display: inline-block;
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
+
+.hide {
+    display: none;
+    font-size: 0.8em;
+}
+
+
+/*---------Global end------------*/
+
+/*-----------------------------------*/
+
+.line {
+    padding: 0 10px;
+}
+
+.header:first-of-type {
+    border-top: 1px solid #afaeac;
+    background: #d6d6d6;
+}
+
+.header a:hover {
+    color: #f9f9f9;
+    text-decoration: underline;
+}
+
+.header.box {
+    margin: 20px 0;
+}
+
+.header p {
+    margin: 0 20px 0;
+    font-size: 0.9em;
+}
+
+.header a {
+    margin-right: 15px;
+}
+
+.header a:last-of-type {
+    margin-right: 0;
+}
+
+.projects li:hover > .hide,
+.contact li:hover > .hide {
+    display: inline;
+    font-size: 0.9em;
+    margin: 0 0 0 20px;
+}
+
+.work-experience > p.comment {
+    color: #000;
+    margin: 10px 0 0;
+}
+
+.fix {
+    max-width: 170px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #f6f7ef;
+    padding: 10px 20px;
+    line-height: 1.4em;
+    border-radius: 15px;
+}
+
+.fix p:nth-of-type(2) {
+    margin: 10px auto;
+}
+
+.fix a {
+    display: block;
+    padding: 5px;
+    color: #2f4f4f;
+}
+
+.fix a:hover span,
+#goal p a:hover span {
+    text-decoration: underline;
+}
+
+.hidden {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: 0 auto;
+    padding: 20px 10px;
+    background: rgba(69, 69, 69, 0.85);
+    text-align: center;
+    box-sizing: border-box;
+    overflow-y: hidden;
+}
+
+.hidden img {
+    height: 100%;
+    margin-right: 50px;
+}
+
+#goal {
+    overflow: hidden;
+}
+
+#goal p {
+    background: #f6f7ef;
+    margin: auto;
+    max-width: 450px;
+    max-height: 600px;
+    padding: 25px;
+    border-radius: 25px;
+    line-height: 1.4em;
+}
+
+#goal p a {
+    display: block;
+    margin-top: 30px;
+}
+
+#goal p b {
+    background: url('../img/my-photo2.jpg') center no-repeat;
+    background-size: cover;
+    display: block;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    overflow: hidden;
+    margin: 60px auto 30px;
+}
+
+#goal:target {
+    display: block;
+}
+
+#prev-perth:target,
+#prev-logic:target,
+#prev-global-media:target,
+#prev-bondi:target,
+#justup-v1:target,
+#justup-v2:target,
+#prev-slider:target {
+    display: block;
+}
+
+/*Desktop End-----------------------*/
+
+/*Mobile*-------------------------------*/
+
+@media screen and (max-width: 767px) {
+    ol {
+        padding: 0 10px 0 35px;
+    }
+    li {
+        vertical-align: top;
+        padding: 0 0 0 10px;
+    }
+    li span:first-of-type {
+        text-align: center;
+    }
+    .lvl-1 {
+        padding: 0;
+    }
+    .lvl-2 {
+        padding: 0;
+    }
+    .ibl {
+        float: none;
+        display: inline;
+    }
+    .ib {
+        display: inline;
+    }
+    .header b {
+        display: block;
+    }
+    .header p {
+        margin: 10px 20px 0;
+    }
+    .header a:hover {
+        color: #6b6a68;
+    }
+    .projects li:hover > .hide,
+    .contact li:hover > .hide {
+        display: none;
+    }
+    .projects .mob::after,
+    .contact .mob::after {
+        content: '/*Click to view*/';
+        float: right;
+        color: #6f7762;
+        font-size: 0.9em;
+    }
+    #goal p {
+        margin-top: 10px;
+    }
+    #goal p b {
+        margin: 30px auto 15px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    body {
+        font: 20px/24px 'Consolas', monospace;
+    }
+}
+
+@media screen and (min-width: 2040px) {
+    body {
+        font: 28px/30px 'Consolas', monospace;
+    }
+}
+
+/*Mobile end*---------------------------*/

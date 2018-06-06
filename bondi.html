@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script><![endif]-->
+    <title>Bondi</title>
+    <link rel="stylesheet" href="css/bondi.css">    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+<div class="wrapper">
+    <div class="header">
+        <div class="wrap">
+            <div class="top">
+                <div class="logo ibl"><a href="#"><img src="img/bondi/logo-w.png" alt=""></a></div>
+                <div class="panel ibr">
+                    <div class="main-menu ibl">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li>
+                            <input type="checkbox" id="search-toggle">
+                            <input placeholder="Search" type="text" id="search">
+                            <label for="search-toggle"><img src="img/bondi/search.png" alt=""></label>
+                        </li>
+                    </div>
+                    <a href="#" class="ibr btn">Login</a>
+                </div>
+            </div>
+            <h1>Taste the Creativity</h1>
+            <h3>We make awesome graphic and web design</h3>
+            <a href="#" class="btn">Get Started</a>
+            <div class="mob-nav">
+                <input type="checkbox" id="mob-menu-toggle">
+                <label for="mob-menu-toggle"><img src="img/bondi/down-arrow.png" alt=""></label>
+                <div class="mob-menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li>
+                        <form action="">
+                            <input placeholder="Search" type="text" id="mob-search"><button class="mob-submit" type="submit"></button>
+                        </form>
+                    </li>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="section-1">
+        <div class="wrap">
+            <img src="img/bondi/chart.png" alt="Chart">
+            <h2>We are Good at</h2>
+            <h3>Some of these stuff under</h3>
+            <hr>
+            <div class="service-warp">
+                <div class="service-1 ibl">
+                    <div class="img-cont">
+                        <img src="img/bondi/container-bg-1.png" alt="First">
+                        <img src="img/bondi/pencil.png" alt="Pencil">
+                    </div>
+                    <p>Graphic Design</p>
+                    <p>Pellentesque in ipsum id orci porta dapibus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.</p>
+                </div>
+                <div class="service-2 ibl">
+                    <div class="img-cont">
+                        <img src="img/bondi/container-bg-2.png" alt="Second">
+                        <img src="img/bondi/monitor.png" alt="Monitor">
+                    </div>
+                    <p>Web Design</p>
+                    <p>Pellentesque in ipsum id orci porta dapibus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.</p>
+                </div>
+                <div class="service-3 ibl">
+                    <div class="img-cont">
+                        <img src="img/bondi/container-bg-3.png" alt="Third">
+                        <img src="img/bondi/plug.png" alt="Plug">
+                    </div>
+                    <p>App Design</p>
+                    <p>Pellentesque in ipsum id orci porta dapibus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-2">
+        <div class="wrap">
+            <img src="img/bondi/chart.png" alt="Chart">
+            <h2>We Make This</h2>
+            <h3>Prepare to be amazed</h3>
+            <hr>
+            <div class="slider">
+                <ul>
+                    <li class="btn btn-t slideractive" data-foo="1" id="sl1">All</li>
+                    <li class="btn btn-t" data-foo="2" id="sl2">Design</li>
+                    <li class="btn btn-t" data-foo="3" id="sl3">Code</li>
+                    <li class="btn btn-t" data-foo="4" id="sl4">Photography</li>
+                    <li class="btn btn-t" data-foo="5" id="sl5">Apps</li>
+                </ul>
+                <div class="slider-group">
+                    <div class="slide" id="contslide1" style="display:block">
+                        <div class="example ibl"><a href=""><img src="img/bondi/example.png" alt=""></a></div>
+                        <div class="example ibl"><a href=""><img src="https://picsum.photos/g/300/200?random" alt=""></a></div>
+                        <div class="example ibl"><a href=""><img src="https://picsum.photos/300/200" alt=""></a></div>
+                        <div class="example ibl"><a href=""><img src="https://picsum.photos/300/200?random" alt=""></a></div>
+                        <div class="example ibl"><a href=""><img src="https://picsum.photos/g/300/200?random" alt=""></a></div>
+                        <div class="example ibl"><a href=""><img src="https://picsum.photos/300/200" alt=""></a></div>
+                        <div class="example ibl"><a href=""><img src="https://picsum.photos/300/200?random" alt=""></a></div>
+                        <div class="example ibl"><a href=""><img src="https://picsum.photos/g/300/200?random" alt=""></a></div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="slide" id="contslide2" style="display:none">
+                        <div class="example ibl"><a href=""><img src="https://picsum.photos/g/300/200?random" alt=""></a></div>
+                        <div class="example ibl"><a href=""><img src="img/bondi/example.png" alt=""></a></div>
+                        <div class="example ibl"><a href=""><img src="https://picsum.photos/300/200" alt=""></a></div>
+                        <div class="example ibl"><a href=""><img src="https://picsum.photos/300/200?random" alt=""></a></div>
+                        <div class="example ibl"><a href=""><img src="https://picsum.photos/g/300/200?random" alt=""></a></div>
+                        <div class="example ibl"><a href=""><img src="https://picsum.photos/300/200" alt=""></a></div>
+                        <div class="example ibl"><a href=""><img src="https://picsum.photos/300/200?random" alt=""></a></div>
+                        <div class="example ibl"><a href=""><img src="https://picsum.photos/g/300/200?random" alt=""></a></div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="slide" id="contslide3" style="display:none">
+                        <div class="example ibl"><a href=""><img src="https://picsum.photos/300/200" alt=""></a></div>
+                        <div class="example ibl"><a href=""><img src="https://picsum.photos/g/300/200?random" alt=""></a></div>
+                        <div class="example ibl"><a href=""><img src="img/bondi/example.png" alt=""></a></div>
+                        <div class="example ibl"><a href=""><img src="https://picsum.photos/300/200?random" alt=""></a></div>
+                        <div class="example ibl"><a href=""><img src="https://picsum.photos/g/300/200?random" alt=""></a></div>
+                        <div class="example ibl"><a href=""><img src="https://picsum.photos/300/200" alt=""></a></div>
+                        <div class="example ibl"><a href=""><img src="https://picsum.photos/300/200?random" alt=""></a></div>
+                        <div class="example ibl"><a href=""><img src="https://picsum.photos/g/300/200?random" alt=""></a></div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="slide" id="contslide4" style="display:none">
+                        <div class="example ibl"><a href=""><img src="https://picsum.photos/g/300/200?random" alt=""></a></div>
+                        <div class="example ibl"><a href=""><img src="https://picsum.photos/g/300/200?random" alt=""></a></div>
+                        <div class="example ibl"><a href=""><img src="https://picsum.photos/300/200" alt=""></a></div>
+                        <div class="example ibl"><a href=""><img src="https://picsum.photos/300/200?random" alt=""></a></div>
+                        <div class="example ibl"><a href=""><img src="https://picsum.photos/g/300/200?random" alt=""></a></div>
+                        <div class="example ibl"><a href=""><img src="https://picsum.photos/300/200" alt=""></a></div>
+                        <div class="example ibl"><a href=""><img src="https://picsum.photos/300/200?random" alt=""></a></div>
+                        <div class="example ibl"><a href=""><img src="img/bondi/example.png" alt=""></a></div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="slide" id="contslide5" style="display:none">
+                        <div class="example ibl"><a href=""><img src="https://picsum.photos/300/200" alt=""></a></div>
+                        <div class="example ibl"><a href=""><img src="https://picsum.photos/g/300/200?random" alt=""></a></div>
+                        <div class="example ibl"><a href=""><img src="https://picsum.photos/300/200" alt=""></a></div>
+                        <div class="example ibl"><a href=""><img src="https://picsum.photos/300/200?random" alt=""></a></div>
+                        <div class="example ibl"><a href=""><img src="https://picsum.photos/g/300/200?random" alt=""></a></div>
+                        <div class="example ibl"><a href=""><img src="img/bondi/example.png" alt=""></a></div>
+                        <div class="example ibl"><a href=""><img src="https://picsum.photos/300/200?random" alt=""></a></div>
+                        <div class="example ibl"><a href=""><img src="https://picsum.photos/g/300/200?random" alt=""></a></div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+            <a href="" class="btn btn-up">I Want More</a>
+        </div>
+    </div>
+    <div class="section-3">
+        <div class="wrap">
+            <img src="img/bondi/chart.png" alt="Chart">
+            <h2>Some Stuff About Us</h2>
+            <h3>The Great Team</h3>
+            <hr>
+            <p>Donec rutrum congue leo eget malesuada. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. Donec sollicitudin molestie malesuada.</p>
+        </div>
+        <div class="wrap">
+            <div class="l-content ibl">
+            <h2>Retina Design</h2>
+            <p>Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. </p>
+            <p>Donec rutrum congue leo eget malesuada. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. Donec sollicitudin molestie malesuada.</p>
+                <a href="#" class="btn btn-up ibl">Order me one</a>
+        </div>
+            <div class="r-img ibl">
+                <img src="img/bondi/mac.png" alt="MacBook">
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="section-4">
+        <div class="wrap">
+            <h2>Meet the Team</h2>
+            <p>Donec rutrum congue leo eget malesuada. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. Donec sollicitudin molestie malesuada.</p>
+            <div class="team-box">
+                <div class="person ibl">
+                    <div class="img-box">
+                        <img src="img/bondi/luke.jpg" alt="">
+                    </div>
+                    <h3>Luke Skywalker</h3>
+                    <p>“I don't understand how we got by those troops. I thought we were dead.“</p>
+                </div>
+                <div class="person ibl">
+                    <div class="img-box">
+                        <img src="img/bondi/obi.jpg" alt="">
+                    </div>
+                    <h3>Obi-Wan Kenobi</h3>
+                    <p>“Your clones are very impressive. You must be very proud”</p>
+                </div>
+                <div class="person ibl">
+                    <div class="img-box">
+                        <img src="img/bondi/laia.jpg" alt="">
+                    </div>
+                    <h3>Pincess Leia</h3>
+                    <p> “I don't know who you are or where you came from, but from now on you'll do as I tell you, okay?” </p>
+                </div>
+                <div class="person ibl">
+                    <div class="img-box">
+                        <img src="img/bondi/Yoda.png" alt="">
+                    </div>
+                    <h3>Yoda</h3>
+                    <p>“Do not assume anything Obi-Wan. Clear your mind must be if you are to discover the real villains behind this plot.”
+                    </p>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+    <div class="section-5">
+        <div class="wrap">
+            <div class="img-cont">
+                <img src="img/bondi/montreal.png" alt="Montreal">
+            </div>
+            <div class="img-cont">
+                <img src="img/bondi/lab.png" alt="Lab">
+            </div>
+            <div class="img-cont">
+                <img src="img/bondi/groove.png" alt="Groove">
+            </div>
+            <div class="img-cont">
+                <img src="img/bondi/simple.png" alt="Simple">
+            </div>
+            <div class="img-cont">
+                <img src="img/bondi/montreal.png" alt="Montreal">
+            </div>
+            <div class="img-cont">
+                <img src="img/bondi/lab.png" alt="Lab">
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="section-6">
+        <div class="wrap">
+            <h2>Start Your Project Now</h2>
+            <p>Leave your description and we start the engine. Don't worry, you can cancel anytime</p>
+            <a href="" class="btn btn-up">Start project</a>
+        </div>
+    </div>
+    <div class="section-7">
+        <div class="wrap">
+            <img src="img/bondi/chart.png" alt="Chart">
+            <h2>Read Our Blog</h2>
+            <h3>New stories</h3>
+            <hr>
+            <div class="blog-box">
+                <div class="img-box"><img src="https://picsum.photos/g/400/200?random" alt=""></div>
+                <span>January 17,2017</span>
+                <p>Some Awesome Blog Title Here</p>
+            </div>
+            <div class="blog-box">
+                <div class="img-box"><img src="https://picsum.photos/400/200" alt=""></div>
+                <span>January 17,2017</span>
+                <p>Some Awesome Blog Title Here</p>
+            </div>
+            <div class="blog-box">
+                <div class="img-box"><img src="https://picsum.photos/400/200?random" alt=""></div>
+                <span>January 17,2017</span>
+                <p>Some Awesome Blog Title Here</p>
+            </div>
+            <div class="clear"></div>
+            <a href="" class="btn btn-up">More Stories</a>
+        </div>
+    </div>
+    <div class="section-8">
+        <div class="wrap">
+            <form action="">
+                <label for="email">Subscribe to our Newsletter:</label>
+                <input type="text" id="email" placeholder="Enter email Address">
+                <button type="submit" class="btn">Subscribe</button>
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="wrap">
+            <div class="info">
+                <div class="logo-f ibl">
+                    <img src="img/bondi/logo-w.png" alt="Bondi-Logo">
+                    <p>Pellentesque in ipsum id orci porta dapibus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.</p>
+                </div>
+                <div class="f-box ibr">
+                    <div class="links ibl">
+                        <li>Links</li>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Our Services</a></li>
+                        <li><a href="">Portfolio</a></li>
+                        <li><a href="">Testimonials</a></li>
+                        <li><a href="">Support</a></li>
+                        <li><a href="">Terms and Conditions</a></li>
+                    </div>
+                    <div class="about ibl">
+                        <li>About Us</li>
+                        <li><a href="">Sign In</a></li>
+                        <li><a href="">Register</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Contact Us</a></li>
+                    </div>
+                    <div class="contact ibr">
+                        <li>Contact Us</li>
+                        <li>Get in touch with us via mail phone.We are waiting for
+                            your call or message</li>
+                        <a href="" class="btn">graphberry@gmail.com</a>
+                        <div class="social">
+                            <a href=""><img src="img/bondi/icon-fb.png" alt="Facebook"></a>
+                            <a href=""><img src="img/bondi/icon-twitter.png" alt="Twitter"></a>
+                            <a href=""><img src="img/bondi/icon-google.png" alt="GooglePlus"></a>
+                            <a href=""><img src="img/bondi/icon-dribble.png" alt="Dribble"></a>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="create ibl">
+                    <p>Created by <span>Graphberry</span>,Belgrade,Serbia</p>
+                    <p> © 2017 - <span>Bondi.Inc</span></p>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).on('click', 'li', function() {
+        var id = 'contslide' + $(this).attr('data-foo')
+        $('#' + id).css({'display':'block'}).siblings().css({'display':'none'})
+        var id = 'sl' + $(this).attr('data-foo')
+        $('#' + id).addClass('slideractive').siblings().removeClass('slideractive')
+    })
+</script>
+</body>
+</html>

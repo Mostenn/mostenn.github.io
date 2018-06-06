@@ -1,0 +1,1785 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700');
+/*Global Styles-------------------*/
+
+/*reset
+----------------------------------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+    display: block;
+}
+
+/*reset end*/
+
+body {
+    font: 14px/25px 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.clear {
+    clear: both;
+}
+
+.logo {
+    font-size: 22px;
+    color: #ff7200;
+    display: inline-block;
+    padding: 11px 20px;
+    border: 1px solid #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: .1em;
+}
+
+.btn {
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 15px 20px;
+    background: #ff7200;
+    font-size: 13px;
+    cursor: pointer;
+    border: 1px solid #ff7200;
+    font-weight: 600;
+    letter-spacing: .2em;
+}
+.wrapper{
+    position: relative;
+}
+.wrap {
+    max-width: 1170px;
+    position: relative;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.ibl {
+    display: inline-block;
+    float: left;
+}
+
+.ibr {
+    display: inline-block;
+    float: right;
+}
+.dsp-n{
+    display: none;
+}
+
+.d-5 {
+    -webkit-clip-path: polygon(0 0%, 100% 0, 100% 72%, 50% 100%, 0 72%);
+    clip-path: polygon(0 0%, 100% 0, 100% 72%, 50% 100%, 0 72%);
+    position: relative;
+}
+
+.r-5 {
+    -webkit-clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    position: relative;
+}
+
+.in-5 {
+    height: calc(100% - 2px);
+    width: calc(100% - 2px);
+    position: absolute;
+    top: 1px;
+    left: 1px;
+}
+
+h1 {
+    font-size: 55px;
+    margin-bottom: 15px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 70px;
+}
+
+h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    margin-bottom: 45px;
+    display: inline-block;
+    font-weight: 500;
+    text-align: left;
+    color: #444444;
+}
+
+h2:after {
+    content: '';
+    border-bottom: 4px solid #ff7200;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 50px;
+}
+h3{
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+footer h3::after {
+    content: '';
+    border-bottom: 4px solid #ff7200;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 50px;
+}
+/*tabs
+----------------------------------------------------------------*/
+
+.tab-box {
+    font-size: 0;
+}
+
+.tab{
+    display: inline-block;
+    padding: 5px;
+    border: 1px solid #fff;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.tab:hover {
+    background: #ff7200;
+    border: 1px solid #ff7200;
+}
+/*tabs end
+----------------------------------------------------------------*/
+
+/*Global Styles End
+--------------------------------------------------------------------------------*/
+
+/*Mobile
+----------------------------------------------------------------*/
+
+header .mob-menu ul{
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 5;
+}
+#mob-menu-toggle:checked ~ .mob-menu{
+    display: block;
+}
+header .mob-nav>label[for="mob-menu-toggle"]{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url("../img/logic/ico-mob-menu-off.png") 50% center no-repeat;
+    float: right;
+}
+#mob-menu-toggle:checked + label[for="mob-menu-toggle"]{
+    background: url("../img/logic/ico-mob-menu-on.png") 50% center no-repeat;
+}
+label[for="mob-menu-toggle"],
+.mob-nav li{
+    cursor: pointer;
+}
+
+/*Mobile end
+----------------------------------------------------------------*/
+
+/*Header
+----------------------------------------------------------------*/
+header {
+    padding: 0 0 55px;
+    text-align: center;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out
+}
+header .top {
+    border-bottom: 1px solid #45433e;
+    padding: 32px 0 0;
+    margin-bottom: 265px;
+}
+header .top .main-menu li {
+    display: inline-block;
+    padding: 13px 10px 50px;
+    color: #ffffff;
+    text-transform: uppercase;
+    cursor: pointer;
+    position: relative;
+    font-weight: 500;
+}
+
+header .top .main-menu a,
+header .mob-nav a{
+    color: #fff;
+}
+
+header .top .main-menu li:hover::after {
+    content: '';
+    border-bottom: 4px solid #ff7200;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+}
+
+header .top .main-menu li:hover a,
+header .mob-nav li:hover a{
+    color: #ff7200;
+}
+
+header p {
+    color: #ffffff;
+    margin-bottom: 60px;
+}
+
+header .btn {
+    font-weight: 600;
+    padding: 15px 30px;
+    letter-spacing: .2em;
+}
+
+header .tab-box {
+    margin-top: 190px;
+}
+header .main-menu #search-text{
+    background: #ffffff;
+    border: 1px solid #ff7200;
+    border-radius: 5px;
+    color: #ff7200;
+    font-weight: 600;
+    padding: 8px;
+    width: 200px;
+    -webkit-box-shadow: 2px 4px 15px rgba(255, 255, 255, 0.7), -2px -4px 15px rgba(255, 255, 255, 0.7);
+    -moz-box-shadow: 2px 4px 15px rgba(255, 255, 255, 0.7), -2px -4px 15px rgba(255, 255, 255, 0.7);
+    box-shadow: 2px 4px 15px rgba(255, 255, 255, 0.7), -2px -4px 15px rgba(255, 255, 255, 0.7);
+    position: absolute;
+    right: 46px;
+    top: 14px;
+}
+header label[for="search"]{
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 8px;
+}
+header label[for="search"] img{
+}
+header #search:checked ~ #search-text{
+    display: block;
+}
+/*Header end
+----------------------------------------------------------------*/
+
+/*Section-1
+----------------------------------------------------------------*/
+
+#h-tb1:checked ~ header{
+    background: url("../img/logic/bg-top.png") center top no-repeat;
+}
+#h-tb2:checked ~ header{
+    background: #292929;
+}
+#h-tb3:checked ~ header{
+    background: green;
+}
+#h-tb1:checked ~ header label[for="h-tb1"],
+#h-tb2:checked ~ header label[for="h-tb2"],
+#h-tb3:checked ~ header label[for="h-tb3"]{
+    background: #ff7200;
+}
+
+#sl2:target ~ #contslide2,
+#sl3:target ~ #contslide3,
+#sl4:target ~ #contslide4{
+    display: block;
+}
+#sl2:target ~ #contslide1,
+#sl3:target ~ #contslide1,
+#sl4:target ~ #contslide1{
+    display: none;
+}
+.section-1 .wrap > a{
+    display: block;
+    color: #787878;
+}
+.section-1 a:not(.btn) {
+    display: inline-block;
+    padding: 40px 0 50px;
+    background: #eeeeee;
+    cursor: pointer;
+    width: 24%;
+    height: 110px;
+    margin-right: 1.3%;
+    color: #444444;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.section-1 a:hover,
+.section-1 a:active{
+    background: #ff7200;
+    color: #fff;
+}
+
+.section-1 a:last-of-type {
+    margin-right: 0;
+}
+
+.section-1 .l-cont {
+    max-width: 560px;
+}
+
+.section-1 .l-cont p{
+    margin-bottom: 40px;
+    line-height: 2em;
+    color: #787878;
+}
+.section-1 .r-img img{
+    width: 100%;
+}
+.section-1 .slide{
+    margin-top: 110px;
+}
+
+/*Section-1 end
+----------------------------------------------------------------*/
+
+/*Section-2
+----------------------------------------------------------------*/
+
+.section-2 {
+    padding: 60px 0 100px;
+    color: #787878;
+}
+
+.section-2 .tab-box {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.section-2 .tab {
+    border: 1px solid #787878;
+}
+
+.section-2 .tab:hover {
+    border-color: #ff7200;
+}
+.section-2 .l-img{
+    width: 48%;
+
+}
+.section-2 .l-img > div:first-of-type{
+    width: 100%;
+    height: 340px;
+}
+
+#s2-tb1:checked ~ .l-img > div:first-of-type{
+    background: url("../img/logic/slide-fw-1.png");
+}
+#s2-tb2:checked ~ .l-img > div:first-of-type{
+    background: url("../img/logic/slide-fw-2.png");
+}
+#s2-tb3:checked ~ .l-img > div:first-of-type{
+    background: #ff7200;
+}
+#s2-tb1:checked ~ .l-img  label[for="s2-tb1"],
+#s2-tb2:checked ~ .l-img  label[for="s2-tb2"],
+#s2-tb3:checked ~ .l-img  label[for="s2-tb3"]{
+    background: #ff7200;
+}
+
+.section-2 .r-content {
+    padding-left: 10px;
+    max-width: 500px;
+}
+
+.section-2 .r-content h4{
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    color: #444;
+}
+
+.section-2 .r-content p {
+    margin-bottom: 40px;
+}
+
+.section-2 .r-content li span {
+    font-weight: 600;
+    color: #444;
+}
+
+.section-2 .r-content li:last-of-type {
+    margin-bottom: 50px;
+}
+
+.section-2 .r-content .btn {
+    background: transparent;
+    color: #444;
+    border: 1px solid #444;
+}
+
+.section-2 .r-content .btn:hover {
+    background: #ff7200;
+    border-color: #ff7200;
+    color: #fff;
+}
+
+/*Section-2 end
+----------------------------------------------------------------*/
+
+/*Section-3
+----------------------------------------------------------------*/
+
+.section-3 {
+    background: url("../img/logic/bg-video.png") center top no-repeat;
+    text-align: center;
+    padding: 225px 0 155px;
+    position: relative;
+}
+.section-3 > a {
+    display: block;
+    margin-bottom: 40px;
+}
+
+.section-3 h3 {
+    font-size: 20px;
+    letter-spacing: .1em;
+}
+
+a[href="#s-3"]{
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 500;
+    cursor: pointer;
+}
+#video:target{
+    display: block;
+}
+#video{
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    top: -35px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+.section-3 #video > iframe{
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/*Section-3 end
+----------------------------------------------------------------*/
+
+/*Section-4
+----------------------------------------------------------------*/
+
+.section-4 {
+    padding: 130px 0 100px;
+}
+/*------------------------------*/
+
+.section-4 li span {
+    background: #444;
+    height: 108px;
+    width: 108px;
+    cursor: pointer;
+}
+
+.section-4 li span a {
+    background: #fff;
+    width: calc(100% - 22px);
+    display: inline-block;
+    line-height: 140px;
+    padding-left: 20px;
+}
+
+.section-4 li span:hover,
+.section-4 li span:hover a{
+    background: #ff7200;
+}
+
+/*-----------------------*/
+
+.section-4 .l-cont {
+    max-width: 500px;
+}
+
+.section-4 .l-cont p {
+    line-height: 2em;
+    padding-left: 130px;
+    margin-bottom: 50px;
+    color: #444444;
+}
+
+.section-4 .l-cont p:first-of-type {
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #292929;
+    line-height: normal;
+}
+.section-4 .r-img img{
+    width: 100%;
+}
+
+/*Section-4 end
+----------------------------------------------------------------*/
+
+/*Section-5
+----------------------------------------------------------------*/
+
+.section-5 {
+    padding: 50px 0;
+}
+
+.section-5 .l-cont {
+    max-width: 50%;
+    color: #444;
+}
+
+#sl5:target ~ #contslide5,
+#sl6:target ~ #contslide6,
+#sl7:target ~ #contslide7{
+    display: block;
+}
+#sl6:target ~ #contslide5,
+#sl7:target ~ #contslide5{
+    display: none;
+}
+.section-5 .l-cont > a {
+    display: inline-block;
+    margin-bottom: 30px;
+    background: #292929;
+    text-transform: uppercase;
+    font-weight: 500;
+    width: 32%;
+    height: 70px;
+    cursor: pointer;
+    color: #444444;
+}
+
+.section-5 .l-cont  a span {
+    display: inline-block;
+    height: calc(100% - 17px);
+    padding: 15px 0 0;
+    background: #fff;
+    text-align: center;
+}
+
+.section-5 .l-cont a:hover,
+.section-5 .l-cont a:active{
+    background: #ff7200;
+}
+
+.section-5 .l-cont a:hover span,
+.section-5 .l-cont a:active span{
+    background: #ff7200;
+    color: #fff;
+}
+
+.section-5 .l-cont .slide li {
+    display: inline-block;
+    margin-right: 40px;
+}
+
+.section-5 .l-cont .slide li img {
+    margin-right: 10px;
+    line-height: 2em;
+}
+
+.section-5 .l-cont p {
+    line-height: 2em;
+    margin-bottom: 20px;
+}
+
+.section-5 .r-cont {
+    width: 45%;
+    padding-left: 50px;
+}
+
+.section-5 .r-cont span {
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.section-5 .skill {
+    width: 95%;
+}
+
+.section-5 .r-cont .progress {
+    border: 1px solid #eeeeee;
+    padding: 3px;
+    width: 100%;
+    margin-bottom: 45px;
+}
+
+.section-5 .r-cont .progress .line {
+    padding: 2px;
+    background: #ff7200;
+}
+#ln1{
+    max-width: 79%;
+}
+#ln2{
+    max-width: 90%;
+}
+#ln3{
+    max-width: 69%;
+}
+#ln4{
+    max-width: 92%;
+}
+
+/*Section-5 end
+----------------------------------------------------------------*/
+
+/*Section-6
+----------------------------------------------------------------*/
+
+.section-6 {
+    background: url("../img/logic/bg-stats.png") center top no-repeat;
+    text-align: center;
+    padding: 190px 0;
+}
+
+.section-6 li {
+    display: inline-block;
+    margin-right: 150px;
+    text-align: left;
+}
+
+.section-6 li:last-of-type {
+    margin-right: 0;
+}
+
+.section-6 li p,
+.section-6 li span{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.section-6 li span {
+    display: block;
+    font-size: 35px;
+    margin-bottom: 15px;
+    letter-spacing: .2em;
+}
+
+.section-6 li img {
+    margin-bottom: 15px;
+}
+
+/*Section-6 end
+----------------------------------------------------------------*/
+
+/*Section-7
+----------------------------------------------------------------*/
+
+.section-7 {
+    padding: 70px 0;
+    text-align: center;
+}
+
+.section-7 .service-box {
+    display: inline-block;
+    max-width: 30%;
+    text-align: left;
+}
+
+.section-7 .service-box {
+    margin: 0 4% 30px 0;
+}
+
+.section-7 .service-box:nth-child(3n + 3) {
+    margin-right: 0;
+}
+
+.section-7 .service-box span {
+    display: inline-block;
+    background: #444;
+    height: 70px;
+    width: 66px;
+    cursor: pointer;
+    line-height: 70px;
+}
+
+.section-7 .service-box span a {
+    display: inline-block;
+    background: #fff;
+    width: calc(100% - 12px);
+    line-height: 95px;
+    padding-left: 10px;
+}
+
+.section-7 .service-box span:hover a {
+    background: #ff7200;
+}
+
+.section-7 .service-box span {
+    background: #eee;
+
+}
+
+.section-7 .service-box p:first-of-type {
+    text-transform: uppercase;
+    padding-left: 75px;
+    font-weight: 500;
+    line-height: 70px;
+    margin-bottom: 15px;
+}
+
+.section-7 .service-box p:last-of-type {
+    line-height: 2em;
+    font-size: 13px;
+}
+
+/*Section-7 end
+----------------------------------------------------------------*/
+
+/*Section-8
+----------------------------------------------------------------*/
+
+.section-8 {
+    padding: 0 0 100px;
+    text-align: center;
+}
+
+.section-8 .person-box {
+    display: inline-block;
+    margin-right: 1.5%;
+    position: relative;
+}
+.section-8 .person-box img{
+    width: 100%;
+}
+
+.section-8 .person-box:last-of-type {
+    margin-right: 0;
+}
+
+.section-8 .person-box .person-hover,
+.section-10 .project .hover{
+    background: rgba(255, 114, 0, 0.8);
+    padding: 20px;
+    position: absolute;
+    top: 30%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 80%;
+    color: #fff;
+    text-align: center;
+}
+
+.section-8 .person-box:hover .person-hover,
+.section-10 .project:hover .hover{
+    display: block;
+}
+
+.section-8 .person-box .person-hover p,
+.section-10 .project .hover p{
+    text-align: left;
+}
+
+.section-8 .person-box .person-hover p:first-of-type,
+.section-10 .project .hover p:first-of-type{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.section-8 .person-box .person-hover p:last-of-type{
+    margin-bottom: 30px;
+}
+
+.section-8 .person-box .person-hover a,
+.section-10 .project .hover a{
+    border: 1px solid #fff;
+    margin-right: 10%;
+    color: #ff7200;
+    padding: 8px;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    overflow: hidden;
+    text-align: center;
+}
+
+.section-8 .person-box .person-hover a img,
+.section-10 .project .hover a img{
+    width: 100%;
+    height: 100%;
+}
+
+.section-8 .person-box .person-hover a:hover {
+    background: #ff7200;
+    color: #ff7200;
+}
+
+.section-8 .person-box .person-hover a:last-of-type {
+    margin-right: 0;
+}
+
+/*Section-8 end
+----------------------------------------------------------------*/
+
+/*Section-9
+----------------------------------------------------------------*/
+
+.section-9 {
+    padding: 50px 0;
+}
+
+.section-9 .l-content {
+    width: 50%;
+}
+
+.section-9 li {
+    margin-bottom: 10px;
+    border: 1px solid #eee;
+    cursor: pointer;
+}
+
+.section-9 li span {
+    display: inline-block;
+    background: #eee;
+    height: 55px;
+    width: 45px;
+    cursor: pointer;
+    line-height: 65px;
+    padding-left: 10px;
+}
+
+.section-9 li:hover span {
+    background: #ff7200;
+}
+
+.section-9 li label {
+    text-transform: uppercase;
+    font-weight: 600;
+    display: block;
+    padding: 15px 0 15px 60px;
+    cursor: pointer;
+}
+
+#great-design:checked ~ p,
+#responsive-design:checked ~ p,
+#retina-ready:checked ~ p,
+#free-font:checked ~ p,
+#grid-base:checked ~ p{
+    display: block;
+}
+.section-9 li p:last-of-type {
+    border: 1px solid #eee;
+    padding: 20px;
+}
+.section-9 .r-img img{
+    width: 100%;
+}
+
+/*Section-9 end
+----------------------------------------------------------------*/
+
+/*Section-10
+----------------------------------------------------------------*/
+
+.section-10 {
+    padding: 50px 0;
+    text-align: right;
+}
+.section-10 h2{
+    float: left;
+}
+
+#sl9:target ~ #contslide9,
+#sl10:target ~ #contslide10,
+#sl11:target ~ #contslide11{
+    display: block;
+}
+#sl9:target ~ #contslide8,
+#sl10:target ~ #contslide8,
+#sl11:target ~ #contslide8{
+    display: none;
+}
+.section-10 .wrap > a {
+    display: inline-block;
+    padding: 0 10px 20px;
+    position: relative;
+    right: 0;
+    text-transform: uppercase;
+    color: #444;
+    font-size: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: right;
+}
+
+.section-10 .wrap > a:last-of-type {
+    padding-right: 0;
+}
+.section-10 .wrap > a::after{
+    content: '';
+    border-bottom: 1px solid #eeeeee;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+}
+.section-10 .wrap > a:hover::after,
+.section-10 .wrap > a:active:after{
+    content: '';
+    border-bottom: 4px solid #ff7200;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+}
+
+.section-10 .grid-box {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-flow: row dense;
+}
+
+.section-10 .grid-box .project{
+    grid-column-start: auto;
+    grid-row-start: auto;
+    position: relative;
+}
+
+.section-10 .project .it-1 {
+    grid-row-end: span 1;
+}
+
+.it-2 {
+    grid-column-end: span 2;
+}
+
+.it-3 {
+    grid-row-end: span 2;
+}
+
+.section-10 .project img {
+    width: 100%;
+    height: 100%;
+}
+.section-10 .project .hover a:not(last-of-type){
+    text-align: left;
+    margin-right: 15px;
+}
+.section-10 .project .hover div:first-of-type{
+    text-align: left;
+    margin-bottom: 25px;
+}
+.section-10 .project .hover div:nth-of-type(2){
+    float: left;
+}
+.section-10 .project .hover>a:last-of-type{
+    float: right;
+    margin-right: 0;
+    border: none;
+    line-height: 60px;
+    overflow: visible;
+}
+/*Section-10 end
+----------------------------------------------------------------*/
+
+/*Section-11
+----------------------------------------------------------------*/
+
+.section-11 {
+    padding: 50px 0;
+    text-align: center;
+    background: url("../img/logic/bg-quotes.png") no-repeat;
+    color: #fff;
+}
+
+.section-11 .s11-sl{
+    max-width: 900px;
+    margin: 0 auto 30px;
+}
+
+.section-11 .tab-box {
+    margin-top: 60px;
+}
+#s11-tb1:checked ~ .s11-sl-1,
+#s11-tb2:checked ~ .s11-sl-2,
+#s11-tb3:checked ~ .s11-sl-3{
+    display: block;
+}
+#s11-tb1:checked ~ .tab-box label[for="s11-tb1"],
+#s11-tb2:checked ~ .tab-box label[for="s11-tb2"],
+#s11-tb3:checked ~ .tab-box label[for="s11-tb3"]{
+    background: #ff7200;
+}
+
+/*Section-11 end
+----------------------------------------------------------------*/
+
+/*Section-12
+----------------------------------------------------------------*/
+
+.section-12 {
+    padding: 100px 0;
+    text-align: center;
+    background: #eee;
+}
+
+.section-12 img {
+    margin-right: 9%;
+}
+
+.section-12 img:last-of-type {
+    margin-right: 0;
+}
+
+/*Section-12 end
+----------------------------------------------------------------*/
+
+/*Section-13
+----------------------------------------------------------------*/
+
+.section-13 {
+    position: relative;
+    padding: 135px 0 140px;
+}
+
+.headphones,
+.glasses,
+.clips,
+.markers,
+.pen {
+    position: absolute;
+    z-index: -1;
+}
+
+.headphones {
+    left: 0;
+    top: 18%;
+}
+
+.glasses {
+    left: 39%;
+    bottom: 30%;
+}
+
+.clips {
+    left: 0;
+    bottom: 12%;
+}
+
+.markers {
+    right: 5%;
+    top: 12%;
+}
+
+.pen {
+    right: 5%;
+    bottom: 10%;
+}
+
+.section-13 li {
+    margin-bottom: 25px;
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.section-13 li span {
+    background: #787878;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+}
+
+.section-13 li span a {
+    background: #fff;
+    width: calc(100% - 7px);
+    display: inline-block;
+    line-height: 65px;
+    padding-left: 5px;
+}
+
+.section-13 li span a img {
+    z-index: 5;
+}
+
+.section-13 li span:hover,
+.section-13 li span:hover a{
+    background: #ff7200;
+}
+
+
+.section-13 p {
+    padding-left: 80px;
+}
+
+.section-13 p:first-of-type {
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.section-13 p:last-of-type {
+    font-size: 13px;
+    margin-bottom: 20px;
+    color: #787878;
+}
+
+.section-13 form {
+    width: 90%;
+}
+
+.section-13 .contact {
+    max-width: 35%;
+}
+
+.section-13 .message {
+    max-width: 50%;
+}
+
+.section-13 .inp-box {
+    width: calc(50% - 19px);
+    margin: 0 10px 10px 0;
+}
+
+.section-13 .inp-box:nth-of-type(2n) {
+    margin: 0 0 10px;
+}
+
+.section-13 .txtar-box {
+    max-width: calc(100% - 15px);
+    padding-right: 10px;
+}
+
+.section-13 input,
+.section-13 textarea {
+    background: rgba(255, 255, 255, 0.7);
+    border: 2px solid #eeeeee;
+    font-size: 12px;
+    color: #444;
+}
+
+.section-13 input {
+    width: 100%;
+    line-height: 50px;
+    padding-left: 15px;
+}
+
+.section-13 input:nth-of-type(2n) {
+    margin-right: 0;
+}
+
+.section-13 textarea {
+    width: 100%;
+    resize: none;
+    padding: 15px;
+}
+
+/*Section-13 end
+----------------------------------------------------------------*/
+
+/*Section-14
+----------------------------------------------------------------*/
+
+.section-14 {
+    text-align: center;
+    position: relative;
+}
+
+.section-14:hover .over {
+    display: none;
+}
+
+.section-14 .over {
+    background: rgba(255, 114, 0, 0.7);
+    text-align: center;
+    color: #fff;
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.section-14 h3 {
+    margin-top: 65px;
+}
+
+.section-14 > iframe {
+    height: 100%;
+    width: 100%;
+    border: none;
+    background: #eee;
+}
+
+/*Section-14 end
+----------------------------------------------------------------*/
+
+/*Footer
+----------------------------------------------------------------*/
+
+footer {
+    background: #292929;
+    padding-top: 75px;
+    color: #787878;
+    font-size: 13px;
+}
+
+footer a {
+    color: #787878;
+}
+
+footer a:hover {
+    color: #ff7200;
+}
+
+footer .logo {
+    margin-bottom: 20px;
+}
+
+.box {
+    width: 23%;
+    margin-right: 2%;
+}
+
+.box:first-of-type {
+    max-width: 25%;
+}
+
+.box:last-of-type {
+    margin-right: 0;
+}
+
+.box ul {
+    width: 48%;
+    margin-right: 2%;
+}
+
+.box li a {
+    line-height: 2em;
+}
+
+footer .newsletter p {
+    margin-bottom: 20px;
+}
+
+footer h3 {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #787878;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+footer form {
+    position: relative;
+}
+
+footer input {
+    background: transparent;
+    border: 1px solid #787878;
+    width: calc(100% - 22px);
+    color: #787878;
+    line-height: 30px;
+    padding: 0 10px;
+}
+
+footer button {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    border: none;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    background: transparent url("../img/logic/icon-arrow.png") center no-repeat;
+}
+
+.copy-box {
+    background: #000;
+    padding: 25px 0;
+    margin-top: 85px;
+    color: #fff;
+}
+
+.copy-box p {
+    display: inline-block;
+}
+
+.copy-box a {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    margin-right: 20px;
+}
+
+.copy-box img {
+    margin-right: 15px;
+    width: 100%;
+    height: 100%;
+}
+
+.copy-box a:last-of-type {
+    margin-right: 0;
+}
+footer .social{
+    margin-right: 10px;
+}
+
+/*Footer end
+----------------------------------------------------------------*/
+/*--------------Media----
+--------------------------------------*/
+@media screen and (max-width: 767px) {
+    header .top{
+        margin-bottom: 100px;
+    }
+    header .main-menu{
+        display: none;
+    }
+    header .mob-nav{
+        display: block;
+    }
+    header .mob-menu{
+        text-align: center;
+        padding-top: 70px;
+    }
+    header .mob-menu ul{
+        background: rgba(255, 114, 0, 0.95);
+    }
+    header .mob-nav .mob-menu li{
+        line-height: 54px;
+        font-size: 1.5em;
+        font-weight: 600;
+        border: 2px solid transparent;
+    }
+    header .mob-nav .mob-menu li:hover{
+        border: 2px solid #ff7200;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        background: rgba(255, 255, 255, 0.9);
+    }
+    header #mob-search-text{
+        background: transparent;
+        border: 1px solid #fff;
+        border-radius: 5px;
+        padding: 7px;
+        color: #fff;
+    }
+    header label[for="mob-search-text"]{
+        color: #ffffff;
+        cursor: pointer;
+    }
+    header .mob-nav .mob-menu li:hover label[for="mob-search-text"]{
+        color: #ff7200;
+    }
+    header .mob-nav .mob-menu li:hover #mob-search-text{
+        color: #ff7200;
+        border: 1px solid #ff7200;
+    }
+    /*-------------------------------*/
+    .section-1 .slide{
+        padding-top: 50px;
+    }
+    .section-1 .l-cont{
+        float: none;
+        margin: 0 auto;
+        display: block;
+    }
+    .section-1 .r-img{
+        float: none;
+        max-width: 550px;
+        margin: 40px auto 0;
+        display: block;
+    }
+    .logo{
+        margin-bottom: 30px;
+    }
+    /*-------------------------------*/
+
+    .section-2 .l-img{
+        float: none;
+        margin: 0 auto;
+        display: block;
+        max-width: 550px;
+        width: 100%;
+    }
+    .section-2 .l-img .tab-box{
+        padding: 10px 0;
+    }
+    .section-2 .r-content{
+        padding-left: 0;
+        float: none;
+        display: block;
+        max-width: none;
+    }
+    .section-2  .r-content h4{
+        margin-bottom: 0;
+    }
+    /*--------------------------*/
+    .section-4{
+        padding: 60px 0 40px;
+    }
+    .section-4 .l-cont{
+        max-width: none;
+    }
+    .section-4 li span{
+        height: 50px;
+        width: 50px;
+    }
+    .section-4 li span a{
+        width: calc(100% - 2px);
+        line-height: 70px;
+        padding-left: 0;
+    }
+    .section-4 li span a img{
+        width: 95%;
+    }
+    .section-4 .l-cont p{
+        padding-left: 0;
+    }
+    .section-4 .l-cont p:first-of-type{
+        margin-bottom: 10px;
+        line-height: 50px;
+        padding-left: 60px;
+    }
+    .section-4 .r-img{
+        float: none;
+        display: block;
+        margin: 0 auto;
+        max-width: 350px;
+    }
+    /*----------------------------------*/
+    .section-5{
+        padding: 0;
+    }
+    .section-5 .l-cont{
+        max-width: none;
+    }
+    .section-5 .l-cont > a{
+        font-size: 0;
+    }
+    .section-5 .l-cont > a{
+        width: 32%;
+        margin-right: 0;
+        font-size: 12px;
+    }
+    .section-5 .l-cont > a a:last-of-type{
+        margin-right: 0;
+    }
+    .section-5 .l-cont .slide{
+        margin-bottom: 20px;
+    }
+    .section-5 .l-cont .slide li{
+        margin: 0 9%;
+    }
+    .section-5 .r-cont{
+        width: 100%;
+        padding-left: 0;
+    }
+    /*---------------------------*/
+    .section-6{
+        padding: 50px 0;
+    }
+    .section-6 li{
+        margin: 2%;
+        text-align: center;
+        width: 45%;
+    }
+    /*--------------------------------*/
+    .section-7 .service-cont{
+        margin: 0 auto;
+    }
+    .section-7 .service-box{
+        max-width: none;
+        margin: 0 0 30px;
+    }
+    /*----------------------------------*/
+    .section-8{
+        text-align: left;
+    }
+    .section-8 .person-box{
+        width: 270px;
+        display: block;
+        margin: 0 auto 10px;
+        overflow: hidden;
+    }
+    .section-8 .person-box:last-of-type{
+        margin-right: auto;
+    }
+    /*-----------------------------------*/
+    .section-9 .l-content{
+        margin-bottom: 20px;
+    }
+    .section-9 .l-content {
+        width: 100%;
+    }
+    .section-9 .r-img{
+        max-width: 300px;
+        float: none;
+        display: block;
+        margin: 0 auto;
+    }
+    /*---------------------------------*/
+    .section-10{
+        text-align: center;
+    }
+    .section-10 .wrap > a{
+        padding: 0 1.3% 10px 0;
+        margin-bottom: 10px;
+    }
+    .section-10 h2{
+        display: block;
+        max-width: 300px;
+        float: none;
+    }
+    .section-10 .it-1,
+    .section-10 .it-2,
+    .section-10 .it-3{
+        grid-column: 1/-1;
+        grid-row: span 1;
+    }
+    .section-10 .project{
+        overflow: hidden;
+    }
+    .section-10 .project .hover{
+        top: 0;
+        width: 90%;
+    }
+    /*------------------*/
+    .section-12 img{
+        margin: 10px 1%;
+    }
+    /*---------------------*/
+    .section-13 h2{
+        text-align: center;
+    }
+    .section-13>img{
+        display: none;
+    }
+    .section-13 .contact{
+        max-width: 350px;
+    }
+    .section-13 .message{
+        max-width: 100%;
+        float: left;
+        width: 100%;
+    }
+    .section-13 form{
+        width: calc(100% - 17px);
+    }
+    .section-13 .inp-box {
+        width: 100%;
+        margin: 0 0 10px;
+        float: none;
+
+    }
+    /*--------------------------*/
+    footer{
+        padding-top: 50px;
+    }
+    footer .f-box .box{
+        width: 90%;
+        margin: 0 3% 15px;
+    }
+    footer .f-box .logo-box{
+        max-width: 100%;
+    }
+    footer .copy-box{
+        margin-top: 25px;
+    }
+    footer .copy-box p{
+        display: block;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+    footer .copy-box .social{
+        float: none;
+        display: block;
+        text-align: center;
+    }
+
+}
+/*-----------------------------------------*/
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    header .top {
+        margin-bottom: 200px;
+    }
+
+    .section-1 .l-cont {
+        max-width: 60%;
+    }
+
+    .section-1 .r-img {
+        max-width: 40%;
+        padding-top: 65px;
+    }
+
+    .section-2 .l-img {
+        max-width: 38%;
+    }
+
+    .section-2 .r-content {
+        max-width: 60%;
+    }
+
+    .section-4 {
+        padding: 150px 0 0;
+    }
+
+    .section-4 .l-cont {
+        max-width: 60%;
+    }
+
+    .section-4 .r-img {
+        max-width: 40%;
+    }
+
+    .section-5 .r-cont {
+        padding-left: 0;
+    }
+
+    .section-6 li {
+        margin-right: 50px;
+    }
+
+    .section-7 .service-box {
+        margin: 5px 0 30px 0;
+        max-width: 49%;
+    }
+
+    .section-8 .person-box {
+        max-width: 24%;
+        margin-right: 0;
+    }
+
+    .section-8 .person-box .person-hover {
+        padding: 18px;
+        top: 20%;
+    }
+
+    .section-8 .person-box .person-hover a {
+        margin-right: 1%;
+    }
+
+    .section-9 .l-content {
+        width: 55%;
+    }
+
+    .section-9 .r-img {
+        max-width: 35%;
+        padding-top: 50px;
+    }
+
+    .section-12 img {
+        margin-right: 0.4%;
+    }
+
+    .section-13 {
+        overflow: hidden;
+    }
+
+    .section-13 .markers {
+        right: -8%;
+    }
+
+    footer {
+        padding-top: 25px;
+    }
+
+    footer .social {
+        margin-right: 10px;
+    }
+
+    footer .box {
+        width: 48%;
+    }
+
+    footer .box:first-of-type {
+        max-width: none;
+        width: 100%;
+    }
+
+    footer .newsletter {
+        width: 100%;
+    }
+
+    footer .newsletter p {
+        float: left;
+    }
+
+    footer .newsletter form {
+        width: 300px;
+        float: right;
+        margin-right: 2%;
+    }
+
+    footer .copy-box {
+        margin-top: 55px;
+    }
+}
+
+/*-------------------------------------------*/
+@media screen and (min-width: 1024px) and (max-width: 1200px){
+    .section-1 .r-img{
+        max-width: 44%;
+    }
+    .section-2 .l-img{
+        max-width: 49%;
+    }
+    .section-8 .person-box {
+        max-width: 22%;
+    }
+    .section-8 .person-box .person-hover{
+        top: 20%;
+    }
+    .section-8 .person-box .person-hover a{
+        margin-right: 7%;
+    }
+    .section-12 img {
+        margin-right: 6%;
+    }
+    footer .f-box{
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    footer .box{
+        margin-right: 2%;
+    }
+}
+/*-------------------------------------------------------*/

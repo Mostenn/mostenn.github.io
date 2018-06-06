@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,700i');
+/*font-family: 'Montserrat', sans-serif;*/
+
+@font-face {
+    font-family: blackjack;
+    src: url("../fonts/blackjack.otf");
+}
+
+/*---------------------------common styles*/
+
+body{
+    font: 15px/18px 'Montserrat', sans-serif;
+}
+h1{
+    font: 70px/80px 'blackjack', monospace;
+    margin: 50px 0;
+}
+h2{
+    font-size: 40px;
+    line-height: 1.1em;
+    margin-bottom: 40px;
+    color: #7c7c7c;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.wrap{
+    max-width: 960px;
+    margin: 0 auto;
+    position: relative;
+}
+.clear{
+    clear: both;
+}
+.btn{
+    padding: 20px 30px;
+    border: 2px solid transparent;
+    text-transform: uppercase;
+    display: inline-block;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+.btn:hover{
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+}
+a.btn img{
+    vertical-align: bottom;
+}
+.ib{
+    display: inline-block;
+}
+.ibl{
+    display: inline-block;
+    float: left;
+}
+.ibr{
+    display: inline-block;
+    float: right;
+}
+/*-------------------------header-section*/
+header{
+    background: url("../img/perth/bg-nav.png") no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    color: #ffffff;
+    position: relative;
+}
+header .logo img{
+    -webkit-box-shadow: 15px 15px 0 #26b0e6;
+    -moz-box-shadow: 15px 15px 0 #26b0e6;
+    box-shadow: 15px 15px 0 #26b0e6;
+}
+header .menu-btn{
+    padding-top: 30px;
+}
+header .wrap:last-of-type{
+    text-align: right;
+    padding-bottom: 230px;
+    overflow: hidden;
+}
+header p{
+    font-size: 35px;
+    margin-bottom: 75px;
+    line-height: 1.2em;
+}
+header p i{
+    font-weight: 700;
+    font-style: italic;
+}
+header a.btn{
+    color: #ffffff;
+    border-color: #ffffff;
+    display: inline-block;
+}
+header .wrap:last-of-type > img{
+    position: absolute;
+    left: 0;
+}
+.menu{
+    display: none;
+    background: rgb(243, 120, 122);
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: 2;
+}
+.menu ul{
+    margin: 130px auto 0;
+    max-width: 300px;
+}
+.menu ul li{
+    text-align: left;
+    font-size: 18px;
+    font-weight: 700;
+    font-style: italic;
+    padding: 15px;
+    line-height: 2em;
+}
+.menu ul li:hover a{
+    -webkit-box-shadow: 1px 1px 5px #545454, -1px -1px 5px #545454;
+    -moz-box-shadow: 1px 1px 5px #545454, -1px -1px 5px #545454;
+    box-shadow: 1px 1px 5px #545454, -1px -1px 5px #545454;
+}
+.menu ul li a{
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background: #ffffff;
+    margin-right: 30px;
+    padding: 24px;
+    line-height: 15px;
+    display: inline-block;
+}
+#menu:target{
+    display: block;
+}
+/*----------------------header-section end*/
+
+/*-------------------------Section-1----*/
+.section-1{
+    background: #f4f4f4 url("../img/perth/ipad.png") 100% 140px no-repeat;
+    padding: 140px 0;
+    position: relative;
+}
+.section-1 > img{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.section-1  .box{
+    max-width: 600px;
+}
+.section-1 p{
+    color: #9b9b9b;
+    line-height: 24px;
+}
+.section-1 p:first-of-type{
+    margin-bottom: 30px;
+}
+.section-1 p:last-of-type{
+    border-left: 8px solid #4eacdd;
+    padding-left: 25px;
+    font-style: italic;
+    margin-bottom: 70px;
+}
+.section-1 .btn{
+    color: #14af8f;
+    border-color: #14af8f;
+    font-weight: 700;
+}
+/*----------------------Section-1 end---*/
+
+
+/*-------------------------Section-2*/
+.section-2 {
+    padding: 100px 0 240px;
+    background: url("../img/perth/devices.png") 0 130% no-repeat;
+    overflow: hidden;
+}
+.section-2 .box{
+    max-width: 400px;
+}
+.section-2 p{
+    font-weight: 700;
+    font-style: italic;
+    color: #696f7b;
+}
+.section-2 p:nth-of-type(2){
+    margin-bottom: 30px;
+}
+.section-2 p:last-of-type{
+    font-weight: 400;
+    font-style: normal;
+    color: #9b9b9b;
+    margin-bottom: 50px;
+}
+.section-2 .btn{
+    border-color: #ea4c89;
+    color: #ea4c89;
+}
+
+/*----------------------Section-2 end*/
+
+
+/*-------------------------Section-3*/
+.section-3{
+    background: url("../img/perth/bg-donate.png") no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    text-align: center;
+    padding: 90px 0 100px;
+}
+.section-3 h2{
+    color: #ffffff;
+}
+.section-3 .btn{
+    line-height: 15px;
+    border-color: #ffffff;
+    color: #ffffff;
+}
+.section-3 .btn img{
+    margin-left: 10px;
+}
+/*----------------------Section-3 end*/
+
+
+/*-------------------------Section-4*/
+.section-4{
+    text-align: center;
+    padding: 240px 0;
+    background: #f4f4f4;
+}
+.section-4 .circle {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: 2px solid #545454;
+    text-align: center;
+    line-height: 0;
+    margin: 0 35px 65px 0;
+}
+.section-4 .circle:hover{
+    -webkit-box-shadow: 1px 1px 5px #545454, -1px -1px 5px #545454;
+    -moz-box-shadow: 1px 1px 5px #545454, -1px -1px 5px #545454;
+    box-shadow: 1px 1px 5px #545454, -1px -1px 5px #545454;
+}
+.section-4 .circle:last-of-type{
+    margin:0 0 65px 0;
+}
+.section-4 .circle img{
+    padding: 10px;
+}
+.section-4 form span{
+    font-weight: 700;
+    font-style: italic;
+    color: #545454;
+    margin-right: 10px;
+}
+.section-4 input{
+    color: #d3d3d3;
+    background: #ffffff;
+    font-weight: 700;
+    padding: 10px 55px 10px 20px;
+    border: none;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    font-style: italic;
+}
+.section-4 .box{
+    position: relative;
+}
+.section-4 button{
+    height: 20px;
+    padding: 0 15px;
+    border: none;
+    border-left: 1px solid #e9e9e9;
+    background: transparent;
+    position: absolute;
+    right: 0;
+    top: 0.6em;
+    cursor: pointer;
+}
+/*-------------------------Section-4 end*/
+
+/*-------------------------footer-section*/
+footer{
+    text-align: center;
+    color: #545454;
+    padding: 40px 0 40px;
+    font-style: italic;
+}
+footer p{
+    margin-top: 10px;
+}
+footer p span{
+    color: #6dc5ea;
+}
+footer a{
+    background: #f4f4f4;
+    margin-right: 5%;
+    padding: 10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+footer a:hover{
+    -webkit-box-shadow: 1px 1px 5px #545454, -1px -1px 5px #545454;
+    -moz-box-shadow: 1px 1px 5px #545454, -1px -1px 5px #545454;
+    box-shadow: 1px 1px 5px #545454, -1px -1px 5px #545454;
+}
+/*----------------------footer-section end*/
+
+/*---------------------------------------------*/
+
+/*------------------------------Media--------------------*/
+@media screen and (max-width: 767px){
+    .wrap{
+        padding: 0 15px;
+    }
+    header{
+        padding-bottom: 50px;
+    }
+    header .wrap:last-of-type{
+        text-align: center;
+        padding: 0;
+    }
+    header p{
+        margin-bottom: 30px;
+    }
+    header .btn{
+        margin-bottom: 70px;
+    }
+    header .wrap:last-of-type > img{
+        display: none;
+    }
+    header .menu ul{
+        margin: 0 auto;
+    }
+    header .menu .menu-btn{
+        margin-right: 15px;
+    }
+    .section-1{
+        text-align: center;
+        background: #f4f4f4;
+        padding: 70px 0;
+    }
+    .section-1  .box{
+        margin: 0 auto;
+    }
+    .section-2{
+        background: none;
+        padding: 70px 0;
+        text-align: center;
+    }
+    .section-2 .box{
+        float: none;
+    }
+    .section-4 .circle{
+        margin: 0 14px 65px 0;
+    }
+    .section-4 form span{
+        margin: 10px;
+        display: block;
+    }
+    footer p{
+        max-width: 80%;
+    }
+
+}
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .wrap{
+        padding: 0 15px;
+    }
+    .section-1 .box{
+        max-width: 50%;
+    }
+    .section-2{
+        text-align: center;
+        background: url("../img/perth/devices.png") 0 150% no-repeat;
+        padding: 70px 0 240px;
+    }
+    .section-2 .box{
+        padding-bottom: 80px;
+        float: none;
+    }
+}
