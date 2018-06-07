@@ -199,7 +199,7 @@ li.box {
     margin-right: 50px;
 }
 #goal {
-    overflow: hidden;
+    overflow: hidden;    
 }
 
 #goal p {
@@ -210,6 +210,8 @@ li.box {
     padding: 25px;
     border-radius: 25px;
     line-height: 1.4em;
+    
+    
 }
 
 #goal p a {
@@ -306,7 +308,6 @@ li.box {
         top: 0;
         left: 0;
         right: 0;
-        opacity: .9;
         line-height: 1em;
     }
     #goal p {
@@ -330,3 +331,25 @@ li.box {
 }
 
 /*Mobile end*---------------------------*/
+/*--------Print properties--------------*/
+@media print {
+    * { 
+        -webkit-print-color-adjust: exact;
+    }
+    .header:first-of-type {
+        border-top: none;
+    }
+    .header li p.quality {
+        display: none;
+    }   
+    ol{
+        padding: 0 0 0 35px;
+    }
+    .lvl-1 {
+        padding: 0;
+    }
+    .lvl-2 {
+        padding: 0 0 0 30px;
+    }
+}
+/*--------Print properties End-----------*/
