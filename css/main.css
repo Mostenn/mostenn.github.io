@@ -99,11 +99,6 @@ li.box {
     clear: both;
 }
 
-.hide {
-    display: none;
-    font-size: 0.8em;
-}
-
 
 /*---------Global end------------*/
 
@@ -140,11 +135,11 @@ li.box {
     margin-right: 0;
 }
 
-.projects li:hover > .hide,
-.contact li:hover > .hide {
+.projects li .click,
+.contact li .click {
     display: inline;
     font-size: 0.9em;
-    margin: 0 0 0 20px;
+    margin: 0 0 0 15px;
 }
 
 .work-experience > p.comment {
@@ -281,17 +276,11 @@ li.box {
     }
     .header a:hover {
         color: #6b6a68;
-    }
-    .projects li:hover > .hide,
-    .contact li:hover > .hide {
-        display: none;
-    }
-    .projects .mob::after,
-    .contact .mob::after {
-        content: '/*Click to view*/';
-        float: right;
-        color: #6f7762;
-        font-size: 0.9em;
+    }    
+    .projects li .click,
+    .contact li .click{
+        font-size: 0.8em;
+        margin: 0;
     }
     .hidden {
         height: 200%;
@@ -341,9 +330,13 @@ li.box {
     }
 }
 
-@media screen and (min-width: 2040px) {
+@media screen and (min-width: 1920px) {
     body {
         font: 30px/34px 'Consolas', monospace;
+    }
+    #goal p{
+        max-width: 70%;
+        max-height: 70%;
     }
 }
 
