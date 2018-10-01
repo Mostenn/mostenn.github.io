@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=cyrillic');
+
+body, input, button{
+    font-family:'Roboto', sans-serif;
+}
+body{
+    background: #edf0f1;
+}
+header{
+    width: calc(100% - 30px);
+    height: 80px;
+    position: fixed;
+    padding: 15px;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    background: #25b99a;
+    -webkit-box-shadow: 0 2px 4px rgba(44,62,80,0.15);
+    -moz-box-shadow: 0 2px 4px  rgba(44,62,80,0.15);
+    box-shadow: 0 2px 4px  rgba(44,62,80,0.15);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+header input{
+    width: calc(100% - 60px);
+    height: 50px;
+    float: left;
+    font-size: 15px;
+    font-weight: 400;
+    text-indent: 18px;
+    padding: 0 60px 0 0;
+    background: rgba(255,255,255,0.2);
+    border-radius: 5px 25px 25px 5px;
+
+    border: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+header input::-webkit-input-placeholder{
+    color: rgba(2555,255,255,0.75);
+}
+header input:-moz-placeholder{
+    color: rgba(2555,255,255,0.75);
+}
+header input::-moz-placeholder {
+    color: rgba(2555, 255, 255, 0.75);
+}
+header input::-ms-input-placeholder{
+    color: rgba(2555,255,255,0.75);
+}
+header button{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 2;
+    border-radius: 25px;
+    background: #ffffff;
+    border: 0;
+    box-shadow: none;
+    outline: none;
+    cursor: pointer;
+
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+header button svg{
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -8px 0 0 -8px;
+}
+header button svg .fill{
+    fill: #25b99a;
+}
