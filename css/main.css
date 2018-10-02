@@ -311,6 +311,9 @@ footer a:hover{
         width: calc(100% - 20px);
         margin: 20px auto;
     }
+    .tabs{
+        padding: 10px 8px;
+    }
 }
 @media screen and (min-width: 700px) and (max-width: 1016px){
     .left-col {
