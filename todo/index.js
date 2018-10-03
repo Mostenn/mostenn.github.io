@@ -15,7 +15,7 @@ document.getElementById('add').addEventListener('click', function () {
         addItem(value);
     }
 });
-//don't work with android keyboard
+
 document.getElementById('item').addEventListener('keydown', function (e){
     var value = this.value;
     if((e.which == 13 || e.keyCode == 13) && value){
