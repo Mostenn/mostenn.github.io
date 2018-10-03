@@ -79,6 +79,10 @@ a{
 .col{
     box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
     margin: 10px 5px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    overflow: hidden;
 }
 .info-box{      
     padding: 10px 10px 30px;
