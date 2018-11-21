@@ -1,0 +1,122 @@
+body{
+    color: #393939;
+}
+a{
+    color: #354c78;
+}
+a:hover{
+    color: #354c78;
+}
+.fas,
+.fab,
+.far {
+    color: #354c78;
+}
+
+.btn {
+    background: #253a75;
+    color: #ffffff;
+}
+
+.btn:hover,
+.btn:active {
+    color: #253a75;
+    border-color: #354c78;
+    background: #ffffff;
+}
+
+.custom-btns .btn:hover {
+    cursor: default;
+}
+
+.custom-name {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 1px;
+    background: rgba(255, 255, 255, 0.56);
+}
+
+.card-columns {
+    column-count: 2;
+}
+
+.custom-header {
+    background: #253a75;
+}
+
+.custom-header a[aria-selected="false"] {
+    color: #fff;
+}
+
+.nav-tabs .nav-link:hover {
+    border-color: transparent;
+}
+
+.nav-item a.nav-link.active {
+    color: #253a75;
+}
+
+.card {
+    border-color: #354c78;
+}
+
+hr {
+    border-color: #354c78;
+}
+
+.btop-radius > div.card:nth-of-type(1) {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.btop-radius > div.card:nth-of-type(2) {
+    border-radius: 0;
+    border-bottom-left-radius: .25rem;
+    border-bottom-right-radius: .25rem;
+}
+
+footer {
+    background: #354c78;
+    color: #ffffff;
+}
+
+footer .page-link{
+    font-size: 1.5em;
+    background-color: transparent;
+    border-color: transparent;
+}
+footer .page-link:hover{
+    background-color: transparent;
+    border-color: #ffffff;
+}
+footer .page-item:nth-of-type(1) i{
+    width: 1.3rem;
+}
+footer .page-link:hover .fab{
+    color: #ffffff;
+}
+footer .fab{
+    color: #ffffff;
+}
+@media (min-width: 320px) and (max-width: 880px){
+    .btop-radius{
+        margin-bottom: 1em;
+    }
+    .btop-radius .btn{
+        margin-bottom: 5px;
+    }
+    .custom-media .card-columns{
+        column-count: 1;
+    }
+    .custom-name h1{
+        font-size: 1.5rem;
+    }
+    .card-body{
+        padding: .8rem;
+    }
+    .card-text{
+        font-size: .8rem;
+    }
+}
+
