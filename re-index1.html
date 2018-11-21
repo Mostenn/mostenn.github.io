@@ -10,8 +10,6 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <!--    Font Awesome-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-    <!--    Custom-->
-    <link rel="stylesheet" href="css/index-custom.css">
 
     <title>Resume Gatman Serghei</title>
 </head>
@@ -21,36 +19,39 @@
 
         <div class="row">
 
-            <div class="col-sm col-xl-4 btop-radius">
+            <div class="col-md col-lg-5 col-xl-4">
                 <div class="card">
-                    <img class="card-img-top" src="img/avatar.jpg" alt="Avatar">
-                    <div class="card-title border-bottom-0 border-left-1 border-right-1 mb-0 custom-name">
-                        <h1 class="card-title mb-0 p-2">Gatman Serghei</h1>
+                    <img class="card-img-top" src="img/avatar.jpg" alt="Card image cap">
+                    <div class="card-header border-bottom-0">
+                        <h1 class="card-title mb-1">Gatman Serghei</h1>
                     </div>
-                </div>
-                <div class="card border-top-0">
                     <div class="card-body">
+                        <hr>
                         <p class="card-text"><i class="fas fa-briefcase mr-2"></i> Front-end Developer</p>
                         <p class="card-text"><i class="fas fa-home mr-2"></i>Balti, Republic of Moldova</p>
                         <p class="card-text"><i class="fas fa-envelope mr-2"></i> <a href="mailto:kupnu4.hq@gmail.com">kupnu4.hq@gmail.com</a></p>
                         <p class="card-text"><i class="fas fa-phone mr-2"></i>+37379226117</p>
                         <p class="card-text"><i class="fas fa-globe mr-2"></i>Languages: Russian, English, Romanian</p>
-                        <p class="card-text"><i class="fas fa-download mr-2"></i>Download <a href="gatman-europass-cv.pdf" target="_blank">EuropassCV</a></p>
+                        <hr>
                     </div>
-                    <div class="card-body text-center">
-                        <div class="card-text custom-btns">
-                            <span class="btn m-sm-2 ">HTML</span>
-                            <span class="btn m-sm-2 ">CSS</span>
-                            <span class="btn m-sm-2 ">JavaScript</span>
-                            <span class="btn m-sm-2 ">Responsive</span>
-                            <span class="btn m-sm-2 ">GIT</span>
-                            <span class="btn m-sm-2 ">Wordpress</span>
-                            <span class="btn m-sm-2 ">MySQL</span>
-                            <span class="btn m-sm-2 ">Grid CSS</span>
-                            <span class="btn m-sm-2 ">Bootstrap</span>
-                            <span class="btn m-sm-2 ">Photoshop</span>
-                            <span class="btn m-sm-2 ">SASS</span>
-                            <span class="btn m-sm-2 ">jQuery</span>
+                    <div class="card-body">
+                        <h2 class="card-title mb-1"><i class="fas fa-asterisk mr-2"></i>Technologies</h2>
+                        <div class="card-text">
+
+                            <hr>
+                            <span class="btn btn-secondary m-sm-2 ">HTML</span>
+                            <span class="btn btn-secondary m-sm-2 ">CSS</span>
+                            <span class="btn btn-secondary m-sm-2 ">JavaScript</span>
+                            <span class="btn btn-secondary m-sm-2 ">Responsive</span>
+                            <span class="btn btn-secondary m-sm-2 ">GIT</span>
+                            <span class="btn btn-secondary m-sm-2 ">Wordpress</span>
+                            <span class="btn btn-secondary m-sm-2 ">MySQL</span>
+                            <span class="btn btn-secondary m-sm-2 ">Grid CSS</span>
+                            <span class="btn btn-secondary m-sm-2 ">Bootstrap</span>
+                            <span class="btn btn-secondary m-sm-2 ">Photoshop</span>
+                            <span class="btn btn-secondary m-sm-2 ">SASS</span>
+                            <span class="btn btn-secondary m-sm-2 ">jQuery</span>
+                            <hr>
                         </div>
 
                     </div>
@@ -58,15 +59,18 @@
                 </div>
             </div>
 
-            <div class="col custom-media">
+            <div class="col">
                 <div class="card ">
-                    <div class="card-header custom-header">
-                        <ul class="nav nav-tabs nav-justified card-header-tabs" id="myTab" role="tablist">
+                    <div class="card-header">
+                        <ul class="nav nav-tabs card-header-tabs" id="myTab" role="tablist">
                             <li class="nav-item">
-                                <a class="nav-link active" id="about-tab" data-toggle="tab" href="#about" role="tab" aria-controls="about" aria-selected="true">ABOUT</a>
+                                <a class="nav-link active" id="about-tab" data-toggle="tab" href="#about" role="tab" aria-controls="about" aria-selected="true">About</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" id="works-tab" data-toggle="tab" href="#works" role="tab" aria-controls="works" aria-selected="false">WORKS</a>
+                                <a class="nav-link" id="works-tab" data-toggle="tab" href="#works" role="tab" aria-controls="works" aria-selected="false">Works</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="download-tab" data-toggle="tab" href="#download" role="tab" aria-controls="download" aria-selected="false">Download</a>
                             </li>
                         </ul>
                     </div>
@@ -102,64 +106,65 @@
 
                             <div class="tab-pane fade" id="works" role="tabpanel" aria-labelledby="works-tab">
                                 <div class="card-columns">
+                                   <div class="card">
+                                        <img class="card-img-top border-bottom" src="img/pre-slider.jpg"  alt="TODO">
+                                        <div class="card-body">
+                                            <h5 class="card-title">ToDo</h5>
 
+                                            <p class="card-text"><a href="todo.html"><small class="text-muted">Open in new window</small></a></p>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img class="card-img-top border-bottom" src="img/pre-slider.jpg"  alt="Slider">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Slider</h5>
+
+                                            <p class="card-text"><a href="slider.html"><small class="text-muted">Open in new window</small></a></p>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img class="card-img-top border-bottom" src="img/pre-bondi.jpg" alt="Bondi">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Bondi</h5>
+
+                                            <p class="card-text"><a href="bondi.html"><small class="text-muted">Open in new window</small></a></p>
+                                        </div>
+                                    </div>
                                     <div class="card">
                                         <img class="card-img-top" src="img/pre-global-media.png" alt="Global media">
                                         <div class="card-body">
-                                            <h5 class="card-title text-center">Global Media</h5>
-                                            <a href="global-media.html" class="btn btn-block" target="_blank">Open in new window</a>
+                                            <h5 class="card-title">Global Media</h5>
+
+                                            <p class="card-text"><a href="global-media.html"><small class="text-muted">Open in new window</small></a></p>
                                         </div>
                                     </div>
                                     <div class="card">
                                         <img class="card-img-top" src="img/pre-justup-2.jpg" alt="Just UP">
                                         <div class="card-body">
-                                            <h5 class="card-title text-center">Just Up</h5>
-                                            <a href="justup.html" class="btn btn-block" target="_blank">Open in new window</a>
-                                        </div>
-                                    </div>
-                                    <div class="card">
-                                        <img class="card-img-top" src="img/pre-todo.png" alt="TODO">
-                                        <div class="card-body">
-                                            <h5 class="card-title text-center">ToDo</h5>
-                                            <a href="todo.html" class="btn btn-block" target="_blank">Open in new window</a>
-                                        </div>
-                                    </div>
-                                    <div class="card">
-                                        <img class="card-img-top" src="img/pre-slider.jpg" alt="Slider">
-                                        <div class="card-body">
-                                            <h5 class="card-title text-center">Slider</h5>
-                                            <a href="slider.html" class="btn btn-block" target="_blank">Open in new window</a>
-                                        </div>
-                                    </div>
-                                    <div class="card">
-                                        <img class="card-img-top" src="img/pre-bondi.jpg" alt="Bondi">
-                                        <div class="card-body">
-                                            <h5 class="card-title text-center">Bondi</h5>
-                                            <a href="bondi.html" class="btn btn-block" target="_blank">Open in new window</a>
+                                            <h5 class="card-title">Just Up</h5>
+
+                                            <p class="card-text"><a href="justup.html"><small class="text-muted">Open in new window</small></a></p>
                                         </div>
                                     </div>
                                     <div class="card">
                                         <img class="card-img-top" src="img/pre-logic.jpg" alt="Logic">
                                         <div class="card-body">
-                                            <h5 class="card-title text-center">Logic</h5>
-                                            <a href="logic.html" class="btn btn-block" target="_blank">Open in new window</a>
+                                            <h5 class="card-title">Logic</h5>
+
+                                            <p class="card-text"><a href="logic.html"><small class="text-muted">Open in new window</small></a></p>
                                         </div>
                                     </div>
                                     <div class="card">
                                         <img class="card-img-top" src="img/pre-perth.jpg" alt="Perth">
                                         <div class="card-body">
-                                            <h5 class="card-title text-center">Perth</h5>
-                                            <a href="perth.html" class="btn btn-block" target="_blank">Open in new window</a>
+                                            <h5 class="card-title">Perth</h5>
+
+                                            <p class="card-text"><a href="perth.html"><small class="text-muted">Open in new window</small></a></p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="tab-pane fade" id="download" role="tabpanel" aria-labelledby="contact-tab">
-                                <div class="text-center">
-                                    <p class="card-text">Europass CV - <a href="gatman-europass-cv.pdf">Download</a></p>
-                                    <p class="card-text">Resume - <a href="gatman-serghei-resume.pdf">Download</a></p>
-                                </div>
-                            </div>
+                            <div class="tab-pane fade" id="download" role="tabpanel" aria-labelledby="contact-tab">.3.</div>
                         </div>
                     </div>
 
@@ -169,10 +174,10 @@
         </div>
     </div>
 
-    <footer class="text-center container-fluid p-4">
+    <footer class="text-center container-fluid border-top p-4">
         <h4>Find me on social media.</h4>
         <ul class="pagination justify-content-center">
-            <li class="page-item"><a href="https://www.facebook.com/serghei.gatman" target="_blank" class="page-link rounded-circle"><i class="fab fa-facebook-f"></i></a></li>
+            <li class="page-item"><a href="https://www.facebook.com/serghei.gatman" target="_blank" class="page-link rounded-circle"><i class="fab fa-facebook-f" style="width:14px;"></i></a></li>
             <li class="page-item"><a href="https://www.linkedin.com/in/serghei-gatman/" target="_blank" class="page-link rounded-circle"><i class="fab fa-linkedin-in"></i></a></li>
             <li class="page-item"><a href="https://join.skype.com/invite/cM0PYbodXmf0" target="_blank" class="page-link rounded-circle"><i class="fab fa-skype"></i></a></li>
             <li class="page-item"><a href="https://github.com/Mostenn" target="_blank" class="page-link rounded-circle"><i class="fab fa-github-alt"></i></a></li>
