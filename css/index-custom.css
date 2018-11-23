@@ -76,6 +76,11 @@ hr {
     border-bottom-right-radius: .25rem;
 }
 
+.badge{
+    color: #ffffff;
+    background-color: #253a75;
+    font-size: 1rem;
+}
 footer {
     background: #253a75;
     color: #ffffff;
